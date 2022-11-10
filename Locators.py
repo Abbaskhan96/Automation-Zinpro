@@ -51,4 +51,5 @@ class locators():
     assesor_sort_path = "//button[@class='btn btn-primary btn-block--xs pull-right']"
 
     locomotion_checkbox = "//div[12]//div[1]//label[1]//span[1]"
-    heat_abatement_checbox = "//label[2]//span[1]"
+    heat_abatement_checbox = "//div[@class='card-body card-body--group mt-4']//div[6]//div[1]//label[1]//span[1]"
+   
