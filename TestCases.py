@@ -29,8 +29,8 @@ class TestClass(unittest.TestCase):
         
         
     def Launch_driver(self):
-        #link = "https://sgp2.zinprofirststep.com/login" 
-        link = "https://sgp1.zinprofirststep.com/login" 
+        link = "https://sgp2.zinprofirststep.com/login" 
+        #link = "https://sgp1.zinprofirststep.com/login" 
         #link = "https://firststep.zinpro.com/"
         self.driver.get(link)
         self.driver.maximize_window()

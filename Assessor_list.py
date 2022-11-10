@@ -3,6 +3,7 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from Locators import locators;
 from Locomotion import Locomotion_score;
+from Heat_Abatement import heat_assessor;
 import time
 
 
@@ -29,6 +30,11 @@ class assessors_list():
 
         elif self.ask == "15":
             #---Selecting Heat-Abatement CheckBox
+            self.driver.find_element(By.NAME,"evaluation_name").clear()
+            self.driver.find_element(By.NAME,"evaluation_name").send_keys("Quick-Evaluation-Heat-Abatement")
+            self.driver.execute_script("window.scrollTo(0, 1000);")
             self.driver.find_element(By.XPATH,((locators.heat_abatement_checbox))).click() 
             self.click_next()
             time.sleep(2)
+            heat_assessor(self.driver)
+            
