@@ -9,3 +9,5 @@ class heat_assessor():
 
     def __new__(cls,driver):
         self.driver= driver
+        print("Heat Abatement");
+        
