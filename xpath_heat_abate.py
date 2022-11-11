@@ -5,18 +5,18 @@ class Assessors_xpath():
  
  #____________________________________________| W A T E R |____________________________________________________
  #-----------------------------------------Water_Availablity---------|
-        WA_yes = "//label[@for='kfpbus' and text()='Yes']"  
-        WA_no = "//label[@for='nk8oxv']" 
+        WA_yes = "//div[4][@class='row']//child::div[2]//child::div[2]//child::label"  
+        WA_no = "//div[4][@class='row']//child::div[2]//child::div[1]//child::label" 
  #---------------Area arount the Water is free of muds/stones-----------|
-        Warea_yes = "//label[@for='qdd8v']"
-        Warea_no = "//label[@for='4o5hi']"
+        Warea_yes = "//div[5][@class='row']//child::div[2]//child::div[2]//child::label"
+        Warea_no = "//div[5][@class='row']//child::div[2]//child::div[2]//child::label"
 #```````````````````````````````````````````````````````````````````````````````````````````````````````````````
 #_____________________________________________| F A N S |_______________________________________________________
 #---------------------------------------Fans Located in Feed Area?--------|
-        FL_FA_no = "//label[@for='3a3hu']"  
-        FL_FA_yes = "//label[@for='b4lp5s']"
-        HVLS_FA_yes="//label[@for='bkgazm']"
-        HVLS_FA_no="//label[@for='2xi4wq']"
+        FL_FA_no = "//div[6][@class='row']//div[3]//child::div[2]//child::div[1]//label"  
+        FL_FA_yes = "//div[6][@class='row']//div[3]//child::div[2]//child::div[2]//label"
+        HVLS_FA_yes="//div[6][@class='row']//div[2]//child::div[2]//child::div[2]//label"
+        HVLS_FA_no="//div[6][@class='row']//div[2]//child::div[2]//child::div[1]//label"
 #----------------Fans'Temperature?-----------------------|
         Fan_FA_temp = "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[2]/div[7]/div[1]/div[1]/input[1]"
 #----------------Fan's Diameter? (SELECT)-------------------------|
@@ -26,10 +26,10 @@ class Assessors_xpath():
 #``````````````````````````````````````````````````````````````````````````````````````````````````````````````
 #_____________________________________|R E S T I N G _ A R E A |________________________________________
 #----------------------------------------Fan's Located in Resting---------------------------------------------- 
-        FL_RA_no = "//label[@for='308p8f']"
-        FL_Ra_yes = "//label[@for='6rhft']"
-        HVLS_RA_yes="//label[@for='8jijyt']"
-        HVLS_RA_no="//label[@for='nhq1uf']"
+        FL_RA_no = "//*[@id='top']/main/div[1]/div/div/div[2]/div[8]/div[2]/div[1]/div[2]/div[1]/label"
+        FL_Ra_yes = "//*[@id='top']/main/div[1]/div/div/div[2]/div[8]/div[2]/div[1]/div[2]/div[2]/label"
+        HVLS_RA_yes="//*[@id='top']/main/div[1]/div/div/div[2]/div[8]/div[2]/div[2]/div[2]/div[2]/label"
+        HVLS_RA_no="//*[@id='top']/main/div[1]/div/div/div[2]/div[8]/div[2]/div[2]/div[2]/div[1]/label"
 #----------------Fans'Temperature?-----------------------|
         Fan_RA_temp = "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[2]/div[9]/div[1]/div[1]/input[1]"
 #----------------Fan's Diameter (SELECT)?-------------------------|
@@ -41,8 +41,8 @@ class Assessors_xpath():
 #_____________________________________________| S O A K E R S |________________________________________
 
 #----------------------------------------Soakers Located in Feeding Area---------------------------------------------- 
-        Soak_FA_no = "//label[@for='7hgwdi']"
-        Soak_FA_yes = "//label[@for='w265nk']"
+        Soak_FA_no = "//*[@id='top']/main/div[1]/div/div/div[2]/div[10]/div[2]/div[1]/div[2]/div[1]/label"
+        Soak_FA_yes = "//*[@id='top']/main/div[1]/div/div/div[2]/div[10]/div[2]/div[1]/div[2]/div[2]/label"
 #----------------------------------------Soakers Located in Resting Area-----------------------------
         Soak_RA_no = "//label[@for='2yc3vt']"
         Soak_RA_yes = "//label[@for='xdmp7']"
