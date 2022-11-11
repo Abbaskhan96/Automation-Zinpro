@@ -44,11 +44,11 @@ class Assessors_xpath():
         Soak_FA_no = "//*[@id='top']/main/div[1]/div/div/div[2]/div[10]/div[2]/div[1]/div[2]/div[1]/label"
         Soak_FA_yes = "//*[@id='top']/main/div[1]/div/div/div[2]/div[10]/div[2]/div[1]/div[2]/div[2]/label"
 #----------------------------------------Soakers Located in Resting Area-----------------------------
-        Soak_RA_no = "//label[@for='2yc3vt']"
-        Soak_RA_yes = "//label[@for='xdmp7']"
+        Soak_RA_no = "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[10]/div[2]/div[2]/div[2]/div[1]/label"
+        Soak_RA_yes = "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[10]/div[2]/div[2]/div[2]/div[2]/label"
 #----------------------------------------water droplet effecting cows------------------------------
-        drop_no= "//label[@for='vwldj']"
-        drop_yes="//label[@for='ky0a1']"
+        drop_no= "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[10]/div[2]/div[3]/div[2]/div[1]/label"
+        drop_yes="//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[10]/div[2]/div[3]/div[2]/div[2]/label"
 #----------------Soak Temperature?----------------------|
         Soak_temp = "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[1]/input[1]"
 #----------------Soak Duration?-------------------------|
@@ -56,17 +56,17 @@ class Assessors_xpath():
 #----------------Soak Frequency?------------------------|
         Soak_freq = "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[2]/div[11]/div[3]/div[1]/input[1]"
 #----------------------------------------Frequency of soaking vary with Temperature------------------------------
-        SoakFreq_VT_no= "//label[@for='vwldj']"
-        SoakFreq_VT_yes= "//label[@for='fiban']"
+        SoakFreq_VT_no= "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[11]/div[4]/div/div[2]/div[1]/label"
+        SoakFreq_VT_yes= "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[11]/div[4]/div/div[2]/div[2]/label"
 #```````````````````````````````````````````````````````````````````````````````````````````````````````````````````
 ##____________________________________________| S H A D E |________________________________________
 
 #----------------------------------------Soakers Located in Feeding Area---------------------------------------------- 
-        Shade_FA_no = "//label[@for='mnzeg']"
-        Shade_FA_yes = "//label[@for='0sk45h']"
+        Shade_FA_no = "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[12]/div[2]/div[1]/div[2]/div[1]/label"
+        Shade_FA_yes = "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[12]/div[2]/div[1]/div[2]/div[2]/label"
 #----------------------------------------Soakers Located in Resting Area---------------------------------------------- 
-        Shade_RA_no = "//label[@for='er2xyi']"
-        Shade_RA_yes = "//label[@for='b8buzo']"
+        Shade_RA_no = "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[12]/div[2]/div[2]/div[2]/div[1]/label"
+        Shade_RA_yes = "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[12]/div[2]/div[2]/div[2]/div[2]/label"
 #----------------------------------------AirCooling units used in Resting Area------------------------------------
-        Shade_unit_no="//label[@for='glnb8']"
-        Shada_unit_yes="//label[@for='g3pzdr']"
+        Shade_unit_no="//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[12]/div[2]/div[3]/div[2]/div[1]/label"
+        Shada_unit_yes="//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[12]/div[2]/div[3]/div[2]/div[2]/label"

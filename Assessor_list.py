@@ -36,5 +36,5 @@ class assessors_list():
             self.driver.find_element(By.XPATH,((locators.heat_abatement_checbox))).click() 
             self.click_next()
             time.sleep(2)
-            heat_assessor(self.driver)
-            
+            heat_assessor_start = heat_assessor(self.driver)
+            heat_assessor_start.clicking_values();
