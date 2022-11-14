@@ -37,4 +37,4 @@ class assessors_list():
             self.click_next()
             time.sleep(2)
             heat_assessor_start = heat_assessor(self.driver)
-            heat_assessor_start.clicking_values();
+            

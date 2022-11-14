@@ -70,3 +70,37 @@ class Assessors_xpath():
 #----------------------------------------AirCooling units used in Resting Area------------------------------------
         Shade_unit_no="//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[12]/div[2]/div[3]/div[2]/div[1]/label"
         Shada_unit_yes="//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[12]/div[2]/div[3]/div[2]/div[2]/label"
+
+
+        heat_questions_path = {
+            Shade_unit_no:"//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[12]/div[2]/div[3]/div[2]/div[1]/label",
+            Shada_unit_yes : "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[12]/div[2]/div[3]/div[2]/div[2]/label",
+            Shade_RA_no : "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[12]/div[2]/div[2]/div[2]/div[1]/label",
+            Shade_RA_yes : "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[12]/div[2]/div[2]/div[2]/div[2]/label",
+            Shade_FA_no : "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[12]/div[2]/div[1]/div[2]/div[1]/label",
+            Shade_FA_yes : "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[12]/div[2]/div[1]/div[2]/div[2]/label",           
+            SoakFreq_VT_no: "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[11]/div[4]/div/div[2]/div[1]/label",
+            SoakFreq_VT_yes: "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[11]/div[4]/div/div[2]/div[2]/label",
+            Soak_freq : "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[2]/div[11]/div[3]/div[1]/input[1]",
+            Soak_time : "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[2]/div[11]/div[2]/div[1]/input[1]",
+            Soak_temp : "/html[1]/body[1]/div[1]/main[1]/div[1]/div[1]/div[1]/div[2]/div[11]/div[1]/div[1]/input[1]",
+            drop_no: "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[10]/div[2]/div[3]/div[2]/div[1]/label",
+            drop_yes:"//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[10]/div[2]/div[3]/div[2]/div[2]/label",
+            Soak_RA_no : "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[10]/div[2]/div[2]/div[2]/div[1]/label",
+            Soak_RA_yes : "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[10]/div[2]/div[2]/div[2]/div[2]/label",
+            Soak_FA_no : "//*[@id='top']/main/div[1]/div/div/div[2]/div[10]/div[2]/div[1]/div[2]/div[1]/label",
+            Soak_FA_yes : "//*[@id='top']/main/div[1]/div/div/div[2]/div[10]/div[2]/div[1]/div[2]/div[2]/label",
+            FL_RA_no : "//*[@id='top']/main/div[1]/div/div/div[2]/div[8]/div[2]/div[1]/div[2]/div[1]/label",
+            FL_Ra_yes : "//*[@id='top']/main/div[1]/div/div/div[2]/div[8]/div[2]/div[1]/div[2]/div[2]/label",
+            HVLS_RA_yes:"//*[@id='top']/main/div[1]/div/div/div[2]/div[8]/div[2]/div[2]/div[2]/div[2]/label",
+            HVLS_RA_no:"//*[@id='top']/main/div[1]/div/div/div[2]/div[8]/div[2]/div[2]/div[2]/div[1]/label",
+            FL_FA_no : "//div[6][@class='row']//div[3]//child::div[2]//child::div[1]//label" , 
+            FL_FA_yes : "//div[6][@class='row']//div[3]//child::div[2]//child::div[2]//label",
+            HVLS_FA_yes:"//div[6][@class='row']//div[2]//child::div[2]//child::div[2]//label",
+            HVLS_FA_no:"//div[6][@class='row']//div[2]//child::div[2]//child::div[1]//label",
+            Warea_yes : "//div[5][@class='row']//child::div[2]//child::div[2]//child::label",
+            Warea_no : "//div[5][@class='row']//child::div[2]//child::div[2]//child::label",
+            WA_yes : "//div[4][@class='row']//child::div[2]//child::div[2]//child::label",
+            WA_no : "//div[4][@class='row']//child::div[2]//child::div[1]//child::label",    
+           }
+
