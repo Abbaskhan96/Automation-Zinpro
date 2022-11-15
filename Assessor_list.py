@@ -30,8 +30,8 @@ class assessors_list():
 
         elif self.ask == "15":
             #---Selecting Heat-Abatement CheckBox
-            self.driver.find_element(By.NAME,"evaluation_name").clear()
-            self.driver.find_element(By.NAME,"evaluation_name").send_keys("Quick-Evaluation-Heat-Abatement")
+            #self.driver.find_element(By.NAME,"evaluation_name").clear()
+            #self.driver.find_element(By.NAME,"evaluation_name").send_keys("Quick-Evaluation-Heat-Abatement")
             self.driver.execute_script("window.scrollTo(0, 1000);")
             self.driver.find_element(By.XPATH,((locators.heat_abatement_checbox))).click() 
             self.click_next()
@@ -42,3 +42,12 @@ class assessors_list():
             time.sleep(3)
         else:
             raise KeyboardInterrupt(self.ask)
+
+    def click_assessor_checkbox(self, ask):
+        #check the array number for ticking the box
+        if "15" in ask:
+            self.driver.find_element(By.XPATH,((locators.heat_abatement_checbox))).click() 
+
+        if "1" in ask:
+            self.driver.find_element(By.XPATH,((locators.locomotion_checkbox))).click()
+        time.sleep(2)

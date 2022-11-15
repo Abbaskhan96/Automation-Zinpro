@@ -65,10 +65,18 @@ class quick_evaluation_form():
         self.driver.find_element(By.NAME, "pen_size").send_keys("100")
         time.sleep(1);
 
+    def number_of_assessors(self):
+        self.ask =[]
+        self.numbers_assessors = int(input("How Many Assessors, Do you want to add??"))
+
     def input_assessor_array(self):
-        self.ask = input("Select the array of assessor.");
+        self.number_of_assessors()
+        [self.ask.append(input("Enter Array no of selected Assessor no {} : ".format(i+1))) for i in range(self.numbers_assessors)]
+  #      print(self.ask)
+
         locom = assessors_list(self.driver);
-        locom.select_assessor(self.ask);
+        locom.click_assessor_checkbox(self.ask)
+       #locom.select_assessor(self.ask);
 
 
 
