@@ -25,17 +25,17 @@ class quick_evaluation_form():
     def __init__(self,driver):
         self.driver=driver
         self.driver.find_element(By.XPATH,locators.eval_quick_bton_xpath).click()
-        time.sleep(2)
+   
 
     def select_Animal_type(self):
         animal_type=Select(self.driver.find_element(By.NAME,("group_type_of_animal")));
         animal_type.select_by_visible_text("Far-off");
-        time.sleep(2)
+        
 
     def select_Animal_size(self):
         animal_size = Select(self.driver.find_element(By.NAME,("cow_size")));
         animal_size.select_by_index(2)
-        time.sleep(3)
+        
      
  #   def select_assessor(self):
  #       locom_assessor = self.driver.find_element(By.XPATH,locators.Locomotion_assessor_xpath)
@@ -44,26 +44,26 @@ class quick_evaluation_form():
 
     def select_currency(self):
         currency = Select(self.driver.find_element(By.NAME,("currency_qs")))
-        currency.select_by_index(7)
+        currency.select_by_index(25)
         time.sleep(3)
 
     def measurements(self):
        
         for i in locators.values:
             self.driver.find_element(By.XPATH, ((locators.measurement_path).format(i))).click()
-            time.sleep(2)
+            
 
 
     def date_picker(self):
         self.driver.find_element(By.NAME,("consultation_date")).click()
         self.driver.find_element(By.XPATH,(("//span[normalize-space()='6']"))).click()
-        time.sleep(2)
+        time.sleep(1)
 
     def eval_name(self):
         self.driver.find_element(By.NAME,"evaluation_name").send_keys("Quick-Evaluation")
         self.driver.find_element(By.NAME,"pen_name").send_keys("pen-01-Faroff")
         self.driver.find_element(By.NAME, "pen_size").send_keys("100")
-        time.sleep(2);
+        time.sleep(1);
 
     def input_assessor_array(self):
         self.ask = input("Select the array of assessor.");

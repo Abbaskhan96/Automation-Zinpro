@@ -88,4 +88,7 @@ class Assessors_xpath():
              Shada_unit_yes:"//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[12]/div[2]/div[3]/div[2]/div[2]/label"
             }
 
-        
+        select_fields = [
+            Fan_FA_diamter,
+            Fan_RA_diamter
+            ]

@@ -36,7 +36,9 @@ class assessors_list():
             self.driver.find_element(By.XPATH,((locators.heat_abatement_checbox))).click() 
             self.click_next()
             heat_assessor_start = heat_assessor(self.driver)
-            #  heat_assessor_start.clicking_values()
+            heat_assessor_start.selecting_dropdown()
+            heat_assessor_start.input_values()
+            self.driver.find_element(By.XPATH,"//*[@class = 'col-md-24']//a[@href='/reports']").click()
             time.sleep(3)
         else:
             raise KeyboardInterrupt(self.ask)
