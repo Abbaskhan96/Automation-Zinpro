@@ -11,6 +11,8 @@ class heat_assessor():
         self.driver=driver
         print("Heat Abatement");
         
-      
-        time.sleep(3)
-        
+        func = lambda : [i for i in loc.path]
+        [self.driver.find_element(By.XPATH, i).click() for i in func()]
+
+
+

@@ -35,6 +35,8 @@ class assessors_list():
             self.driver.execute_script("window.scrollTo(0, 1000);")
             self.driver.find_element(By.XPATH,((locators.heat_abatement_checbox))).click() 
             self.click_next()
-            time.sleep(2)
             heat_assessor_start = heat_assessor(self.driver)
-            
+            #  heat_assessor_start.clicking_values()
+            time.sleep(3)
+        else:
+            raise KeyboardInterrupt(self.ask)
