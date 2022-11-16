@@ -7,6 +7,7 @@ from Locators import locators;
 from LoginPage import Login;
 from Assessor_list import *;
 import time
+from datetime import datetime;
 
 
 class login_before_evaluation():
@@ -60,7 +61,7 @@ class quick_evaluation_form():
         time.sleep(1)
 
     def eval_name(self):
-        self.driver.find_element(By.NAME,"evaluation_name").send_keys("Quick-Evaluation")
+        self.driver.find_element(By.NAME,"evaluation_name").send_keys("Quick-Evaluation {}".format(datetime.now()))
         self.driver.find_element(By.NAME,"pen_name").send_keys("pen-01-Faroff")
         self.driver.find_element(By.NAME, "pen_size").send_keys("100")
         time.sleep(1);
@@ -74,10 +75,10 @@ class quick_evaluation_form():
         [self.ask.append(input("Enter Array no of selected Assessor no {} : ".format(i+1))) for i in range(self.numbers_assessors)]
   #      print(self.ask)
 
-        locom = assessors_list(self.driver);
-        locom.click_assessor_checkbox(self.ask)
+        assessor_details = assessors_list(self.driver);
+        assessor_details.click_assessor_checkbox(self.ask)
        #locom.select_assessor(self.ask);
-
+        assessor_details.select_assessor(self.ask);
 
 
 
