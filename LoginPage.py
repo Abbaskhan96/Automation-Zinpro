@@ -2,8 +2,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait as expWait
 from selenium.webdriver.support import expected_conditions as EC
-from Locators import locators
 import time
+import sys
+sys.path.append("C:/Users/CDC.CDC-PC/source/repos/Automation-Zinpro/Locators_xpath/");
+from Locators import locators;
 
 class Login():
         

@@ -3,11 +3,11 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait as expWait
 from selenium.webdriver.support import expected_conditions as EC
-from Locators import locators;
 from LoginPage import Login;
 from Assessor_list import *;
 import time
 from datetime import datetime;
+from Locators import locators 
 
 
 class login_before_evaluation():
