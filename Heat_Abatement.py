@@ -1,8 +1,10 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
-from xpath_heat_abate import Assessors_xpath as loc;
 import time
+import sys
+sys.path.append('C:/Users/Muhammad Abbas Khan/source/repos/Automation-Zinpro/All_assessors_xpath');
+from xpath_heat_abate import Assessors_xpath as loc;
 
 
 class heat_assessor():
