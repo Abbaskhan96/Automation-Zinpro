@@ -4210,3 +4210,62 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 DevTools listening on ws://127.0.0.1:59813/devtools/browser/a5dcea7f-7b19-4e58-b179-2c6e2d1aafd0
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp1.zinprofirststep.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp1.zinprofirststep.com."
+1668774342544	geckodriver	INFO	Listening on 127.0.0.1:57513
+1668774345460	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "57514" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofile6HEOYQ"
+1668774351473	Marionette	INFO	Marionette enabled
+1668774351813	Marionette	INFO	Listening on port 57524
+Read port: 57524
+Read port: 57524
+Read port: 57524
+Read port: 57524
+WebDriver BiDi listening on ws://127.0.0.1:57514
+Read port: 57524
+1668774357119	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofile6HEOYQ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:57514/devtools/browser/b8c7e571-4c60-45ad-bf22-8f8006bc612e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp1.zinprofirststep.com."
+1668781575365	geckodriver	INFO	Listening on 127.0.0.1:58236
+1668781578434	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "58237" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileJL818u"
+1668781578956	Marionette	INFO	Marionette enabled
+1668781578965	Marionette	INFO	Listening on port 58248
+Read port: 58248
+WebDriver BiDi listening on ws://127.0.0.1:58237
+1668781579157	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileJL818u\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58237/devtools/browser/d9f0ded1-ecd4-4c04-9ce8-8fa4fe0320d2
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp1.zinprofirststep.com."
+1668781766372	geckodriver	INFO	Listening on 127.0.0.1:58400
+1668781769452	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "58401" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofile4Ag1Q9"
+1668781769950	Marionette	INFO	Marionette enabled
+1668781769958	Marionette	INFO	Listening on port 58411
+Read port: 58411
+WebDriver BiDi listening on ws://127.0.0.1:58401
+1668781770158	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofile4Ag1Q9\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58401/devtools/browser/1a99ceeb-bffb-4c75-9745-d85149576ae3
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp1.zinprofirststep.com."
+1668781918382	geckodriver	INFO	Listening on 127.0.0.1:58544
+1668781921446	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "58545" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofilezUiEjc"
+1668781921961	Marionette	INFO	Marionette enabled
+1668781921970	Marionette	INFO	Listening on port 58555
+Read port: 58555
+WebDriver BiDi listening on ws://127.0.0.1:58545
+1668781922163	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofilezUiEjc\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58545/devtools/browser/43455645-e5b7-4e9c-9fc9-327c60669fa3
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp1.zinprofirststep.com."
+1668782240216	geckodriver	INFO	Listening on 127.0.0.1:58697
+1668782243283	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "58698" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofiletir2OQ"
+1668782243759	Marionette	INFO	Marionette enabled
+1668782243768	Marionette	INFO	Listening on port 58707
+Read port: 58707
+WebDriver BiDi listening on ws://127.0.0.1:58698
+1668782243985	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofiletir2OQ\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:58698/devtools/browser/2be9829d-21f1-407a-8eed-73ac564f1ce2
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp1.zinprofirststep.com."

@@ -78,7 +78,7 @@ class quick_evaluation_form():
         assessor_details = assessors_list(self.driver);
         assessor_details.click_assessor_checkbox(self.ask)
        #locom.select_assessor(self.ask);
-        assessor_details.select_assessor(self.ask);
+        assessor_details.click_Assessor_Filter_btn(self.ask)
 
 
 

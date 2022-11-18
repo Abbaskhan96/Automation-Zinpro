@@ -6,6 +6,7 @@ import time
 from Locators import locators
 import sys
 sys.path.append("C:/Users/CDC.CDC-PC/source/repos/Automation-Zinpro/Assessors_access")
+sys.path.append("C:/Users/Muhammad Abbas Khan/source/repos/Automation-Zinpro/Assessors_access")
 from Heat_Abatement import heat_assessor;
 
 
@@ -26,42 +27,36 @@ class assessors_list():
     #checking that if Both Reports, Next Assessor buttons are not && in assessor details page it should be clicked on Reports
     #else only Next Assessor button clicked
     
-    def click_report_or_Next_Assessor_btn(self):
-       
-  #      if not self.driver.find_element(By.XPATH,"//span[normalize-space()='Next Assessor']"):
-  #        self.driver.find_element(By.XPATH,"//a[@class='btn btn-primary btn-full--sm pull-right']").click()
-  #      else:
-  #        self.driver.find_element(By.XPATH,"//span[normalize-space()='Next Assessor']").click()
+    def click_Assessor_Filter_btn(self,ask):
+        self.ask= ask
+        select_filter = Select(self.driver.find_element(By.CSS_SELECTOR,("//a[@class='btn btn-primary btn-full--sm pull-right']")))
+        for i in range((len(self.ask))):
+            select_filter.select_by_index(i)
+            select_assessor(ask[i])
+        self.driver.find_element(By.XPATH, "//a[@class='btn btn-primary btn-full--sm pull-right']" )
 
-        if self.driver.find_element(By.XPATH,"//a[@class='btn btn-primary btn-full--sm pull-right']"):
-            if self.driver.find_element(By.XPATH,"//span[normalize-space()='Next Assessor']"):
-                self.driver.find_element(By.XPATH,"//span[normalize-space()='Next Assessor']").click()
-            else:
-                self.driver.find_element(By.XPATH,"//a[@class='btn btn-primary btn-full--sm pull-right']").click()
 
     def select_assessor(self,ask):
-        self.ask = ask
-        for i in self.ask: 
-            if "1" in self.ask:
-                #---Selecting DirAlot CheckBox
+        self.ask = ask 
+        if "1" in self.ask:
+            #---Selecting DirAlot CheckBox
                 #self.driver.find_element(By.XPATH,((locators.locomotion_checkbox))).click() 
-                print("Locomotion Assessor is Temporarely Selected...")
-                self.click_report_or_Next_Assessor_btn()
-                time.sleep(3)
+            print("Locomotion Assessor is Temporarely Selected...")
+            time.sleep(1)
 
 
-            if "15" in self.ask:
+        if "15" in self.ask:
                 #---Selecting Heat-Abatement CheckBox
                 #self.driver.find_element(By.NAME,"evaluation_name").clear()
                 #self.driver.find_element(By.NAME,"evaluation_name").send_keys("Quick-Evaluation-Heat-Abatement")
-                heat_assessor_start = heat_assessor(self.driver)
-                heat_assessor_start.selecting_dropdown()
-                heat_assessor_start.input_values()
-                self.click_report_or_Next_Assessor_btn()
-                time.sleep(3)
-            else:
-                #raise KeyboardInterrupt(self.ask)
-                raise ValueError("Incorrect Given Key")
+           heat_assessor_start = heat_assessor(self.driver)
+           heat_assessor_start.selecting_dropdown()
+           heat_assessor_start.input_values()
+           self.click_report_or_Next_Assessor_btn()
+           time.sleep(3)
+        else:
+           #raise KeyboardInterrupt(self.ask)
+           raise ValueError("Incorrect Given Key")
 
     def click_assessor_checkbox(self, ask):
         #check the array number for ticking the box
