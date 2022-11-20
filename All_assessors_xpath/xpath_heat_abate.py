@@ -1,4 +1,4 @@
-class Assessors_xpath():
+class Assessors_HeatAbatement_xpath():
  
 #===================================<<<======| Heat- Abatement |======>>>======================================        
         accessible_water_pen = "//div[@class='col-lg-12']//div[@class='form-group mb-0 mb-sm-1']//input[@type='number']"

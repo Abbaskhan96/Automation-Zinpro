@@ -4,7 +4,7 @@ from selenium.webdriver.support.ui import Select
 from selenium.webdriver.support.ui import WebDriverWait as expWait
 from selenium.webdriver.support import expected_conditions as EC
 from LoginPage import Login;
-from Assessor_list import *;
+from Assessor_list import assessors_list;
 import time
 from datetime import datetime;
 from Locators import locators 
@@ -73,11 +73,12 @@ class quick_evaluation_form():
     def input_assessor_array(self):
         self.number_of_assessors()
         [self.ask.append(input("Enter Array no of selected Assessor no {} : ".format(i+1))) for i in range(self.numbers_assessors)]
-  #      print(self.ask)
+        print(self.ask)
+        self.ask.sort()
 
         assessor_details = assessors_list(self.driver);
         assessor_details.click_assessor_checkbox(self.ask)
-       #locom.select_assessor(self.ask);
+        #assessor_details.select_assessor(self.ask)
         assessor_details.click_Assessor_Filter_btn(self.ask)
 
 
