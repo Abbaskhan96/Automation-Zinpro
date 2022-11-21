@@ -18,8 +18,8 @@ class TestClass(unittest.TestCase):
         self.option.binary_location= (r"C:/Program Files/Mozilla Firefox/firefox.exe")
         #path = r"C:/Users/Muhammad Abbas Khan/Desktop/Login.unittest/geckodriver.exe"
         #path = r"C:/Users/CDC.CDC-PC/source/repos/PythonProj_1/unittest.login/Login.unittest/geckodriver.exe"
-        path = r"C:/Users/CDC.CDC-PC/source/repos/Automation-Zinpro/geckodriver.exe"
-        #path = r"C:/Users/Muhammad Abbas Khan/source/repos/Automation-Zinpro/geckodriver.exe"
+        #path = r"C:/Users/CDC.CDC-PC/source/repos/Automation-Zinpro/geckodriver.exe"
+        path = r"C:/Users/Muhammad Abbas Khan/source/repos/Automation-Zinpro/geckodriver.exe"
         self.driver = webdriver.Firefox(executable_path = path, options = self.option)
         self.wait_key=5;
         self.var_wait = expWait(self.driver, self.wait_key)
@@ -31,8 +31,8 @@ class TestClass(unittest.TestCase):
         
     def Launch_driver(self):
         #link = "https://sgp2.zinprofirststep.com/login" 
-        link = "https://sgp1.zinprofirststep.com/login" 
-       
+        #link = "https://sgp1.zinprofirststep.com/login" 
+        link = "https://hk1.zinprofirststep.com"
         self.driver.get(link)
         self.driver.maximize_window()
         self.driver.find_element(By.XPATH,"//i[@class='fa fa-times']").click()

@@ -1,16 +1,15 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
-from Locomotion import Locomotion_score;
 import time
-from Locators import locators
 import sys
 sys.path.append("C:/Users/CDC.CDC-PC/source/repos/Automation-Zinpro/Assessors_access")
 sys.path.append("C:/Users/Muhammad Abbas Khan/source/repos/Automation-Zinpro/Assessors_access")
 from Heat_Abatement import heat_assessor;
 from Dirt_Alot import Dirt_alot;
-
-
+from Locomotion import Locomotion_score;
+from Locators import locators
+from BioSecurity import BioSecurity;
 class assessors_list():
    
     def __init__(self, driver):
@@ -31,7 +30,7 @@ class assessors_list():
     def click_Assessor_Filter_btn(self,ask):
         self.ask= ask
         for i in range(len(self.ask)):
-           # print(i,self.ask[i])
+            print(i,self.ask[i])
            # print(self.ask[i],self.ask[-1],type(self.ask[-1]))
             self.select_assessor(self.ask[i])
             if i == (len(self.ask)-1):
@@ -58,6 +57,13 @@ class assessors_list():
              time.sleep(2)
 
 
+        elif "8" == self.arg:
+            print("Bio Security is selected")
+            BioSecurity(self.driver)
+            self.arg=None
+            time.sleep(2)
+
+
         elif "14" == self.arg:
             print("Dirt Alot is selected...")
             dirt_alot_start = Dirt_alot(self.driver)
@@ -82,6 +88,9 @@ class assessors_list():
        
         if "1" in ask:
             self.driver.find_element(By.XPATH,((locators.locomotion_checkbox))).click()
+
+        if "8" in ask:
+            self.driver.find_element(By.XPATH,((locators.Bio_security))).click()
     
         if "14" in ask:
             self.driver.find_element(By.XPATH,((locators.Dirt_Alot_checkbox))).click() 

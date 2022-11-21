@@ -5622,3 +5622,372 @@ DevTools listening on ws://127.0.0.1:56811/devtools/browser/944c2e80-781a-426f-a
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp1.zinprofirststep.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp1.zinprofirststep.com."
 1668959833133	Marionette	INFO	Stopped listening on port 56825
+1669014415923	geckodriver	INFO	Listening on 127.0.0.1:59542
+1669014418993	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "59543" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileuO9uL8"
+1669014419534	Marionette	INFO	Marionette enabled
+1669014419543	Marionette	INFO	Listening on port 59552
+Read port: 59552
+WebDriver BiDi listening on ws://127.0.0.1:59543
+1669014419756	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileuO9uL8\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59543/devtools/browser/b988bc38-a282-4d64-b422-5df0bde640d8
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp1.zinprofirststep.com."
+1669014499251	Marionette	INFO	Stopped listening on port 59552
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 1106: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\MUHAMM~1\AppData\Local\Temp\rust_mozprofileuO9uL8\protections.sqlite
+1669014863265	geckodriver	INFO	Listening on 127.0.0.1:59630
+1669014866336	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "59631" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofilel5nKXG"
+1669014866810	Marionette	INFO	Marionette enabled
+1669014866818	Marionette	INFO	Listening on port 59640
+Read port: 59640
+WebDriver BiDi listening on ws://127.0.0.1:59631
+1669014867013	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofilel5nKXG\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59631/devtools/browser/9eb5732c-492e-491f-b7f5-6658f36435ce
+1669016316303	geckodriver	INFO	Listening on 127.0.0.1:59762
+1669016319380	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "59763" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileXDLU9k"
+1669016319865	Marionette	INFO	Marionette enabled
+1669016319874	Marionette	INFO	Listening on port 59772
+Read port: 59772
+WebDriver BiDi listening on ws://127.0.0.1:59763
+1669016320089	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileXDLU9k\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59763/devtools/browser/ece093cd-9251-40c2-bc24-c6aca0e7d22c
+1669016337815	Marionette	INFO	Stopped listening on port 59772
+1669017036337	geckodriver	INFO	Listening on 127.0.0.1:59851
+1669017039415	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "59852" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofilea3TBOh"
+1669017039935	Marionette	INFO	Marionette enabled
+1669017039945	Marionette	INFO	Listening on port 59861
+Read port: 59861
+WebDriver BiDi listening on ws://127.0.0.1:59852
+1669017040164	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofilea3TBOh\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59852/devtools/browser/519edc5b-b806-4bcf-97e6-03dc0645e6ec
+1669017063280	Marionette	INFO	Stopped listening on port 59861
+console.warn: TopSitesFeed: Failed to fetch data from Contile server: NetworkError when attempting to fetch resource.
+1669017078643	geckodriver	INFO	Listening on 127.0.0.1:59915
+1669017081712	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "59916" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileOltTXX"
+1669017082235	Marionette	INFO	Marionette enabled
+1669017082244	Marionette	INFO	Listening on port 59925
+Read port: 59925
+WebDriver BiDi listening on ws://127.0.0.1:59916
+1669017082438	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileOltTXX\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59916/devtools/browser/a0825bab-da13-4f4f-9ce7-5707f3585260
+1669017090423	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:220:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669017097814	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:220:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1669017102900	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:220:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1669017104065	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:220:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1669017290997	geckodriver	INFO	Listening on 127.0.0.1:59993
+1669017294071	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "59994" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileX9TAoe"
+1669017294547	Marionette	INFO	Marionette enabled
+1669017294555	Marionette	INFO	Listening on port 60003
+Read port: 60003
+WebDriver BiDi listening on ws://127.0.0.1:59994
+1669017294782	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileX9TAoe\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:59994/devtools/browser/01b579c3-05e8-4c83-9a09-167379070146
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669017334684	geckodriver	INFO	Listening on 127.0.0.1:60056
+1669017337754	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "60057" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofile3psuib"
+1669017338230	Marionette	INFO	Marionette enabled
+1669017338239	Marionette	INFO	Listening on port 60066
+Read port: 60066
+WebDriver BiDi listening on ws://127.0.0.1:60057
+1669017338475	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofile3psuib\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:60057/devtools/browser/8e64b670-6303-43be-87f1-f1b6d4d0443c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669017404927	Marionette	INFO	Stopped listening on port 60066
+1669023938656	geckodriver	INFO	Listening on 127.0.0.1:61628
+1669023941737	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "61629" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofilepCkqi9"
+1669023942229	Marionette	INFO	Marionette enabled
+1669023942238	Marionette	INFO	Listening on port 61638
+Read port: 61638
+WebDriver BiDi listening on ws://127.0.0.1:61629
+1669023942438	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofilepCkqi9\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:61629/devtools/browser/9a49f3b4-4905-48c1-845f-208768d981a4
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669024026943	Marionette	INFO	Stopped listening on port 61638
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 1106: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\MUHAMM~1\AppData\Local\Temp\rust_mozprofilepCkqi9\protections.sqlite
+1669032130146	geckodriver	INFO	Listening on 127.0.0.1:62869
+1669032133225	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "62870" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileqjd7OV"
+1669032133709	Marionette	INFO	Marionette enabled
+1669032133717	Marionette	INFO	Listening on port 62879
+Read port: 62879
+WebDriver BiDi listening on ws://127.0.0.1:62870
+1669032133907	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileqjd7OV\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62870/devtools/browser/4e8b9b29-1423-4eda-9153-3c3b5dd1a297
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669032166642	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:220:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1669032171460	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:220:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1669032172761	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.sys.mjs:220:24
+TimedPromise@chrome://remote/content/marionette/sync.sys.mjs:205:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.sys.mjs:425:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.sys.mjs:173:31
+1669032266521	geckodriver	INFO	Listening on 127.0.0.1:62953
+1669032269620	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "62954" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileepAHZO"
+1669032270115	Marionette	INFO	Marionette enabled
+1669032270125	Marionette	INFO	Listening on port 62963
+Read port: 62963
+WebDriver BiDi listening on ws://127.0.0.1:62954
+1669032270320	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileepAHZO\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:62954/devtools/browser/2ddd78eb-2788-4aaa-9684-7dcb48b3f472
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669032323721	Marionette	INFO	Stopped listening on port 62963
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 1106: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\MUHAMM~1\AppData\Local\Temp\rust_mozprofileepAHZO\protections.sqlite
+1669033115331	geckodriver	INFO	Listening on 127.0.0.1:63477
+1669033118415	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "63478" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileXI15QO"
+1669033118905	Marionette	INFO	Marionette enabled
+1669033118915	Marionette	INFO	Listening on port 63489
+Read port: 63489
+WebDriver BiDi listening on ws://127.0.0.1:63478
+1669033119107	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileXI15QO\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:63478/devtools/browser/c3059748-a33d-454c-b779-9750e32ac74e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669033309092	Marionette	INFO	Stopped listening on port 63489
+JavaScript error: resource://gre/modules/Sqlite.sys.mjs, line 1106: Error: Sqlite.jsm has been shutdown. Cannot open connection to: C:\Users\MUHAMM~1\AppData\Local\Temp\rust_mozprofileXI15QO\protections.sqlite
+1669033318095	geckodriver	INFO	Listening on 127.0.0.1:63664
+1669033321187	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "63665" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofile1urrXb"
+1669033321675	Marionette	INFO	Marionette enabled
+1669033321683	Marionette	INFO	Listening on port 63675
+Read port: 63675
+WebDriver BiDi listening on ws://127.0.0.1:63665
+1669033321860	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofile1urrXb\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:63665/devtools/browser/e7219e41-71a3-4ec2-b8f2-a29dfbf6109a
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669035631495	geckodriver	INFO	Listening on 127.0.0.1:50192
+1669035634593	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "50193" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileKmrBAM"
+1669035635144	Marionette	INFO	Marionette enabled
+1669035635154	Marionette	INFO	Listening on port 50203
+Read port: 50203
+WebDriver BiDi listening on ws://127.0.0.1:50193
+1669035635368	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileKmrBAM\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50193/devtools/browser/887d9ddb-a24d-4244-bd3c-c3a62a8d9b7a
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669035831700	geckodriver	INFO	Listening on 127.0.0.1:50375
+1669035834790	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "50376" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileCANh3W"
+1669035835254	Marionette	INFO	Marionette enabled
+1669035835262	Marionette	INFO	Listening on port 50386
+Read port: 50386
+WebDriver BiDi listening on ws://127.0.0.1:50376
+1669035835483	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileCANh3W\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50376/devtools/browser/548b3471-06e7-402f-9f88-928207ceb3b1
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669036180350	geckodriver	INFO	Listening on 127.0.0.1:50630
+1669036183422	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "50631" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofilewRnsPm"
+1669036183904	Marionette	INFO	Marionette enabled
+1669036183911	Marionette	INFO	Listening on port 50641
+Read port: 50641
+WebDriver BiDi listening on ws://127.0.0.1:50631
+1669036184111	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofilewRnsPm\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50631/devtools/browser/5243c550-02b1-4a76-aa70-28d5ab949247
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669036792394	geckodriver	INFO	Listening on 127.0.0.1:51019
+1669036795463	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "51020" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileCVQHk3"
+1669036795941	Marionette	INFO	Marionette enabled
+1669036795948	Marionette	INFO	Listening on port 51030
+Read port: 51030
+WebDriver BiDi listening on ws://127.0.0.1:51020
+1669036796178	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileCVQHk3\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51020/devtools/browser/79c472b0-40e5-4830-8a84-c366ffb5310a
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669037377178	geckodriver	INFO	Listening on 127.0.0.1:51406
+1669037380258	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "51407" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofilelhTAZ6"
+1669037380736	Marionette	INFO	Marionette enabled
+1669037380745	Marionette	INFO	Listening on port 51418
+Read port: 51418
+WebDriver BiDi listening on ws://127.0.0.1:51407
+1669037380930	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofilelhTAZ6\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51407/devtools/browser/b43ec27a-a6cf-44c8-b6a0-ed179e24da14
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.error: (new TypeError("parent is null", "resource://devtools/client/inspector/shared/style-change-tracker.js", 67))
+TypeError: parent is null: canMutationImpactCurrentStyles@resource://devtools/client/inspector/shared/style-change-tracker.js:67:24
+onMutations@resource://devtools/client/inspector/shared/style-change-tracker.js:84:41
+_emit@resource://devtools/shared/event-emitter.js:242:32
+emit@resource://devtools/shared/event-emitter.js:186:18
+emit@resource://devtools/shared/event-emitter.js:330:18
+getMutations@resource://devtools/client/fronts/walker.js:313:10
+
+JavaScript error: , line 0: NotFoundError: No such JSWindowActor 'DevToolsFrame'
+1669038359066	geckodriver	INFO	Listening on 127.0.0.1:52045
+1669038362137	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "52046" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofile0XCimS"
+1669038362607	Marionette	INFO	Marionette enabled
+1669038362615	Marionette	INFO	Listening on port 52057
+Read port: 52057
+WebDriver BiDi listening on ws://127.0.0.1:52046
+1669038362835	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofile0XCimS\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52046/devtools/browser/d8be924c-1d4f-45b1-9359-b7760bf923c2
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669038550496	geckodriver	INFO	Listening on 127.0.0.1:52217
+1669038553564	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "52218" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofilegPrluM"
+1669038554023	Marionette	INFO	Marionette enabled
+1669038554031	Marionette	INFO	Listening on port 52229
+WebDriver BiDi listening on ws://127.0.0.1:52218
+Read port: 52229
+1669038554370	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofilegPrluM\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52218/devtools/browser/8e97d9cc-24fc-4c17-9a4a-3b2622aa0469
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669038701466	geckodriver	INFO	Listening on 127.0.0.1:52388
+1669038704553	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "52389" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofile3wVh8l"
+1669038705025	Marionette	INFO	Marionette enabled
+1669038705033	Marionette	INFO	Listening on port 52400
+Read port: 52400
+WebDriver BiDi listening on ws://127.0.0.1:52389
+1669038705252	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofile3wVh8l\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52389/devtools/browser/58f94309-8185-401c-91f9-e06ef39e3083
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669038968539	geckodriver	INFO	Listening on 127.0.0.1:52595
+1669038971623	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "52596" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileT33qDT"
+1669038972099	Marionette	INFO	Marionette enabled
+1669038972107	Marionette	INFO	Listening on port 52606
+Read port: 52606
+WebDriver BiDi listening on ws://127.0.0.1:52596
+1669038972329	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileT33qDT\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52596/devtools/browser/d70338fe-1e20-4360-b49a-d7a66811f549
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669039070910	geckodriver	INFO	Listening on 127.0.0.1:52719
+1669039074006	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "52720" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileBkSP0G"
+1669039074485	Marionette	INFO	Marionette enabled
+1669039074493	Marionette	INFO	Listening on port 52731
+Read port: 52731
+WebDriver BiDi listening on ws://127.0.0.1:52720
+1669039074690	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileBkSP0G\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52720/devtools/browser/20599e18-9d22-4fdb-ae98-928464dd74c7
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669039162809	geckodriver	INFO	Listening on 127.0.0.1:52846
+1669039165896	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "52847" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofile0YkSmo"
+1669039166375	Marionette	INFO	Marionette enabled
+1669039166383	Marionette	INFO	Listening on port 52858
+Read port: 52858
+WebDriver BiDi listening on ws://127.0.0.1:52847
+1669039166600	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofile0YkSmo\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52847/devtools/browser/d9dc4393-0481-4b7f-ad4c-8304cc628163
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669039248722	geckodriver	INFO	Listening on 127.0.0.1:52960
+1669039251804	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "52961" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofilePTslKH"
+1669039252276	Marionette	INFO	Marionette enabled
+1669039252287	Marionette	INFO	Listening on port 52972
+Read port: 52972
+WebDriver BiDi listening on ws://127.0.0.1:52961
+1669039252512	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofilePTslKH\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:52961/devtools/browser/acec76f3-da08-42bc-bf6d-7b2b155538bc
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669039401202	geckodriver	INFO	Listening on 127.0.0.1:53116
+1669039404282	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "53117" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofile7Ko341"
+1669039404748	Marionette	INFO	Marionette enabled
+1669039404756	Marionette	INFO	Listening on port 53127
+WebDriver BiDi listening on ws://127.0.0.1:53117
+Read port: 53127
+1669039405104	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofile7Ko341\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53117/devtools/browser/d2677eb3-0b68-439a-92c3-27750d38cab5
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669039871714	geckodriver	INFO	Listening on 127.0.0.1:53444
+1669039874799	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "53445" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofiletG8gw8"
+1669039875280	Marionette	INFO	Marionette enabled
+1669039875288	Marionette	INFO	Listening on port 53455
+Read port: 53455
+WebDriver BiDi listening on ws://127.0.0.1:53445
+1669039875472	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofiletG8gw8\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53445/devtools/browser/3662f576-a953-4294-8959-a0eacc572c5e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669040190012	geckodriver	INFO	Listening on 127.0.0.1:53681
+1669040193099	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "53682" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileW0y7EM"
+1669040193584	Marionette	INFO	Marionette enabled
+1669040193592	Marionette	INFO	Listening on port 53692
+Read port: 53692
+WebDriver BiDi listening on ws://127.0.0.1:53682
+1669040193795	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileW0y7EM\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53682/devtools/browser/dbdff6fa-0ed0-458d-835c-6055b68db730
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669040396261	geckodriver	INFO	Listening on 127.0.0.1:53839
+1669040399353	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "53840" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileYVl2Ue"
+1669040399831	Marionette	INFO	Marionette enabled
+1669040399841	Marionette	INFO	Listening on port 53852
+Read port: 53852
+WebDriver BiDi listening on ws://127.0.0.1:53840
+1669040400065	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileYVl2Ue\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:53840/devtools/browser/67ceac82-35d2-426d-8f8e-2cbeb26f370d
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+1669040725218	geckodriver	INFO	Listening on 127.0.0.1:54079
+1669040728299	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "54080" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileyM3nso"
+1669040728775	Marionette	INFO	Marionette enabled
+1669040728783	Marionette	INFO	Listening on port 54090
+Read port: 54090
+WebDriver BiDi listening on ws://127.0.0.1:54080
+1669040729006	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\MUHAMM~1\\AppData\\Local\\Temp\\rust_mozprofileyM3nso\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:54080/devtools/browser/0c9272e4-35a6-454a-bf81-a0544c4ae02c
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk1.zinprofirststep.com."

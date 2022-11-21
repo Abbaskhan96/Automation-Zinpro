@@ -3,8 +3,8 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 import time
 import sys
-#sys.path.append('C:/Users/Muhammad Abbas Khan/source/repos/Automation-Zinpro/All_assessors_xpath');
-sys.path.append('C:/Users/CDC.CDC-PC/source/repos/Automation-Zinpro/All_assessors_xpath')
+sys.path.append('C:/Users/Muhammad Abbas Khan/source/repos/Automation-Zinpro/All_assessors_xpath');
+#sys.path.append('C:/Users/CDC.CDC-PC/source/repos/Automation-Zinpro/All_assessors_xpath')
 from xpath_heat_abate import Assessors_HeatAbatement_xpath as loc;
 
 class heat_assessor():

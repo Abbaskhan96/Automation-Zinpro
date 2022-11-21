@@ -5,9 +5,9 @@ from selenium.webdriver.support import expected_conditions as EC
 import time
 import sys
 #sys.path.append("C:/Users/CDC.CDC-PC/source/repos/Automation-Zinpro/Locators_xpath/");
-sys.path.append("C:/Users/CDC.CDC-PC/source/repos/Automation-Zinpro/Locators_xpath/");
-#sys.path.append("C:/Users/Muhammad Abbas Khan/source/repos/Automation-Zinpro/Locators_xpath");
-from Locators import locators;
+#sys.path.append("C:/Users/CDC.CDC-PC/source/repos/Automation-Zinpro/Locators_xpath/");
+sys.path.append("C:/Users/Muhammad Abbas Khan/Source/Repos/Automation-Zinpro/Locators_xpath");
+from Locators import locators
 
 class Login():
         
