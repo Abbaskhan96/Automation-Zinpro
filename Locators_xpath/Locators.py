@@ -42,6 +42,8 @@ class locators():
 
 #quick-Evaluations Xpath
     eval_quick_bton_xpath = "//a[normalize-space()='Quick Start Evaluation']"
+#Herd-Evaluation_Xpath    
+    herd_btn_xpath = "//a[@href = '/evaluations/new']"
 
 
 #-------------quick-Evaluation------------------------|
@@ -58,3 +60,14 @@ class locators():
     #Dirt_Alot_checkbox = "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div/div[5]/div[3]/div/label[1]/span"
     Dirt_Alot_checkbox = "/html/body/div/main/div[1]/div[1]/div/div[2]/div/div[1]/div[5]/div[3]/div/label[1]/span"
     Bio_security = "/html/body/div/main/div[1]/div[1]/div/div[2]/div/div[1]/div[5]/div[2]/div/label[1]/span"
+
+
+#---------------Herd-Evaluation-------------------------|
+
+    #---Company-----
+    company_name = "//select[@name = 'company']"
+    company_country = "//select[@name = 'company_country']"
+    company_state = "//div[3]//div[5]//div[1]//select[1]"
+    company_address = "company_address_line_1"
+    company_city = "company_city"
+    company_postal_code = "company_postal_code"
