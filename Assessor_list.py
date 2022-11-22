@@ -88,15 +88,15 @@ class assessors_list():
        
         if "1" in ask:
             self.driver.find_element(By.XPATH,((locators.locomotion_checkbox))).click()
-
-        if "8" in ask:
-            self.driver.find_element(By.XPATH,((locators.Bio_security))).click()
     
         if "14" in ask:
             self.driver.find_element(By.XPATH,((locators.Dirt_Alot_checkbox))).click() 
 
         if "15" in ask:
             self.driver.find_element(By.XPATH,((locators.heat_abatement_checbox))).click() 
+
+        if "8" in ask:
+            self.driver.find_element(By.XPATH,((locators.Bio_security))).click()
        
         self.click_next()
         time.sleep(2)
