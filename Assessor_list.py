@@ -85,7 +85,7 @@ class assessors_list():
 
     def click_assessor_checkbox(self, ask):
         #check the array number for ticking the box
-       
+        
         if "1" in ask:
             self.driver.find_element(By.XPATH,((locators.locomotion_checkbox))).click()
     
@@ -98,5 +98,5 @@ class assessors_list():
         if "8" in ask:
             self.driver.find_element(By.XPATH,((locators.Bio_security))).click()
        
-        self.click_next()
+        
         time.sleep(2)

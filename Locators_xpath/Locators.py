@@ -54,14 +54,13 @@ class locators():
     assesor_sort_path = "//button[@class='btn btn-primary btn-block--xs pull-right']"
     
 
-    locomotion_checkbox = "//div[12]//div[1]//label[1]//span[1]"
-    heat_abatement_checbox = "//div[@class='row checkbox-grid']//div[6]//div[1]//label[1]//span[1]"
+    locomotion_checkbox = "/html/body/div/main/div[1]/div[1]/div/div[2]/div/div[5]/div[12]/div/label[1]/span"
+    heat_abatement_checbox = "/html/body/div/main/div[1]/div[1]/div/div[2]/div/div[5]/div[6]/div/label[1]/span"
     #Dirt_Alot_checkbox = "//div[@class='card-body card-body--group mt-4']//div[3]//div[1]//label[1]//span[1]"
     #Dirt_Alot_checkbox = "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div/div[5]/div[3]/div/label[1]/span"
-    Dirt_Alot_checkbox = "/html/body/div/main/div[1]/div[1]/div/div[2]/div/div[1]/div[5]/div[3]/div/label[1]/span"
-    Bio_security = "/html/body/div/main/div[1]/div[1]/div/div[2]/div/div[1]/div[5]/div[2]/div/label[1]/span"
-
-
+    Dirt_Alot_checkbox = "/html/body/div/main/div[1]/div[1]/div/div[2]/div/div[5]/div[3]/div/label[1]/span"
+    Bio_security = " /html/body/div/main/div[1]/div[1]/div/div[2]/div/div[5]/div[2]/div/label[1]/span"
+    
 #---------------Herd-Evaluation-------------------------|
 
     #---Company-----

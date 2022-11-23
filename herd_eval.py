@@ -28,7 +28,7 @@ class quick_evaluation_form():
         self.driver.find_element(By.XPATH,locators.eval_quick_bton_xpath).click()
         self.assessor_details = assessors_list(self.driver);
         self.assessor_details.click_assessor_checkbox(self.ask)
-        #assessor_details.select_assessor(self.ask)
+        self.assessor_details.click_next(self)
         self.assessor_details.click_Assessor_Filter_btn(self.ask)
    
 
@@ -76,10 +76,10 @@ class quick_evaluation_form():
         return self.numbers_assessors
 
     def input_assessor_array(self):
-        self.number_of_assessors()
         [self.ask.append(input("Enter Array no of selected Assessor no {} : ".format(i+1))) for i in range(self.numbers_assessors)]
+        self.ask.sort()
         print(self.ask)
-        return self.ask.sort()
+        return self.ask
 
 
 class herd_evaluation_form():
@@ -142,7 +142,7 @@ class herd_evaluation_form():
 
         
             
-
+# .............Factory Design Method------------------
 
 class herd_evaluation(login_before_evaluation):
     def __init__(self, driver):
@@ -160,25 +160,70 @@ class herd_evaluation(login_before_evaluation):
 class groups():
 
     def grp1(self,driver):
+        self.driver = driver
         animal_type=Select(self.driver.find_element(By.NAME,("group_type_of_animal")));
         animal_type.select_by_visible_text("Far-off");
         animal_size = Select(self.driver.find_element(By.NAME,("cow_size")));
         animal_size.select_by_index(3)
-        self.driver.find_element(By.NAME,"pen_name").send_keys("pFaroff")
-        self.driver.find_element(By.NAME, "pen_size").send_keys("100")
-        self.grp1_total_assessors = self.number_of_assessors()
-        self.grp1_assessors = self.input_assessor_array()
-        print(self.grp1_total_assessors,self.grp1_assessors)
+        self.driver.find_element(By.NAME,"group_name").send_keys("Faroff")
+        self.driver.find_element(By.NAME, "group_size").send_keys("100")
+        grp1_total_assessors = quick_evaluation_form.number_of_assessors(self)
+        grp1_assessors = quick_evaluation_form.input_assessor_array(self)
+        assessors_list.click_assessor_checkbox(self,grp1_assessors)
+        print(grp1_total_assessors,grp1_assessors)
+        self.driver.find_element(By.XPATH, "//button[normalize-space()='Add Group']").click()
+       # self.driver.find_element(By.XPATH,"//div[contains(@data-toggle , 'collapse') and @aria-expanded = 'true']").click()
+        time.sleep(2)
 
 
-    def grp2(self):
-        pass
+    def grp2(self,driver):
+        self.driver = driver
+        animal_type=Select(self.driver.find_element(By.XPATH,("(//select[@data-vv-as='Type of Animal'])[1]")));
+        animal_type.select_by_index("1");
+        animal_size = Select(self.driver.find_element(By.XPATH,("(//select[@data-vv-as='Avg. Cow Size'])[1]")));
+        animal_size.select_by_index(3)
+        self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("Closed")
+        self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_size']").send_keys("90")
+        grp2_total_assessors = quick_evaluation_form.number_of_assessors(self)
+        grp2_assessors = quick_evaluation_form.input_assessor_array(self)
+        assessors_list.click_assessor_checkbox(self,grp2_assessors)
+        print(grp2_total_assessors,grp2_assessors)
+        self.driver.find_element(By.XPATH, "//button[normalize-space()='Add Group']").click()
+       # self.driver.find_element(By.XPATH,"//div[contains(@data-toggle , 'collapse') and @aria-expanded = 'true']").click()
 
-    def grp3(self):
-        pass
 
-    def grp4(self):
-        pass
+
+    def grp3(self,driver):
+        self.driver = driver
+        animal_type=Select(self.driver.find_element(By.XPATH,"/html/body/div/main/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/select"));
+        animal_type.select_by_visible_text("Fresh");
+        animal_size = Select(self.driver.find_element(By.XPATH,("(//select[@data-vv-as='Avg. Cow Size'])[1]")));
+        animal_size.select_by_index(2)
+        self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("Fresh")
+        self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_size']").send_keys("75")
+        #self.driver.find_element(By.XPATH,"//input[@name='group_milk_prod']").send_keys("200")
+        grp3_total_assessors = quick_evaluation_form.number_of_assessors(self)
+        grp3_assessors = quick_evaluation_form.input_assessor_array(self)
+        assessors_list.click_assessor_checkbox(self,grp3_assessors)
+        print(grp3_total_assessors,grp3_assessors)
+        self.driver.find_element(By.XPATH, "//button[normalize-space()='Add Group']").click()
+       # self.driver.find_element(By.XPATH,"//div[contains(@data-toggle , 'collapse') and @aria-expanded = 'true']").click()
+
+    def grp4(self,driver):
+        self.driver = driver
+        animal_type=Select(self.driver.find_element(By.XPATH,"/html/body/div/main/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/select"));
+        animal_type.select_by_index("4");
+        animal_size = Select(self.driver.find_element(By.XPATH,("(//select[@data-vv-as='Avg. Cow Size'])[1]")));
+        animal_size.select_by_index(2)
+        self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("Lactating")
+        self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_size']").send_keys("220")
+        self.driver.find_element(By.XPATH,"//input[@name='group_milk_prod']").send_keys("1000")
+        grp4_total_assessors = quick_evaluation_form.number_of_assessors(self)
+        grp4_assessors = quick_evaluation_form.input_assessor_array(self)
+        assessors_list.click_assessor_checkbox(self,grp3_assessors)
+        print(grp4_total_assessors,grp4_assessors)
+        self.driver.find_element(By.XPATH, "//button[normalize-space()='Add Group']").click()
+       # self.driver.find_element(By.XPATH,"//div[contains(@data-toggle , 'collapse') and @aria-expanded = 'true']").click()
 
     def grp5(self):
         pass
