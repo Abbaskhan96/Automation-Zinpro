@@ -88,30 +88,76 @@ class herd_evaluation_form():
         self.driver.execute_script("window.scrollTo(0, 1800);")
         self.driver.find_element(By.XPATH, locators.herd_btn_xpath).click()
         time.sleep(2)
-        self.driver.find_element(By.NAME,"evaluation_name").send_keys("Quick-Evaluation {}".format(date.today()))
+        self.driver.find_element(By.NAME,"evaluation_name").send_keys("Herd-Evaluation {}".format(date.today()))
 
     
-        def company(self,driver):
-            company_name = Select(self.driver.find_element(By.XPATH, locators.comapny_name))
-            company_name.select_by_index(2);
-            company_country = Select(self.driver.find_element(By.XPATH, locators.company_country))
-            company_country.select_by_visible_text("United States")
-            company_state=Select(self.driver.find_element(By.XPATH,locators.company_state))
-            company_state.select_by_visible_text("California")
-            self.driver.find_element(By.XPATH, locators.company_address).send_keys("Los Angeles, California")
-            self.driver.find_element(By.XPATH, locators.company_city).send_keys("California City")
-            self.driver.find_element(By.XPATH, locators.company_postal_code).send_keys("90066")        
+    def company(self):
+        company_name = Select(self.driver.find_element(By.XPATH, locators.company_name))
+        company_name.select_by_index(2);
+        company_country = Select(self.driver.find_element(By.XPATH, locators.company_country))
+        company_country.select_by_visible_text("United States")
+        company_state=Select(self.driver.find_element(By.XPATH,locators.company_state))
+        company_state.select_by_visible_text("California")
+        self.driver.find_element(By.XPATH, locators.company_address).clear()
+        self.driver.find_element(By.XPATH, locators.company_address).send_keys("Los Angeles, California")
+        self.driver.find_element(By.XPATH, locators.company_city).clear()
+        self.driver.find_element(By.XPATH, locators.company_city).send_keys("California City")
+        self.driver.find_element(By.XPATH, locators.company_postal_code).clear()   
+        self.driver.find_element(By.XPATH, locators.company_postal_code).send_keys("90066")   
+        
+    def dairy(self):
+        company_name = Select(self.driver.find_element(By.XPATH, locators.dairy_name))
+        company_name.select_by_index(2);
+        company_country = Select(self.driver.find_element(By.XPATH, locators.dairy_country))
+        company_country.select_by_visible_text("United States")
+        company_state=Select(self.driver.find_element(By.XPATH,locators.dairy_state))
+        company_state.select_by_visible_text("California")
+        self.driver.find_element(By.XPATH, locators.dairy_address).clear()
+        self.driver.find_element(By.XPATH, locators.dairy_address).send_keys("Los Angeles, California")
+        self.driver.find_element(By.XPATH, locators.dairy_city).clear()
+        self.driver.find_element(By.XPATH, locators.dairy_city).send_keys("California City")
+        self.driver.find_element(By.XPATH, locators.dairy_postal_code).clear()   
+        self.driver.find_element(By.XPATH, locators.dairy_postal_code).send_keys("90066")   
 
+    def contact(self):
+        contact_name_select = Select(self.driver.find_element(By.XPATH, locators.contact_name_select))
+        contact_name_select.select_by_index(2)
+        contact_email = self.driver.find_element(By.XPATH,locators.contact_email).clear()
+        contact_email = self.driver.find_element(By.XPATH,locators.contact_email).send_keys("email@email.com")
+        contact_business_phone = self.driver.find_element(By.XPATH,locators.contact_business_phone).clear()
+        contact_business_phone = self.driver.find_element(By.XPATH,locators.contact_business_phone).send_keys("Business_Phones")
+
+
+    def characteristics(self):
+        consultation_date = self.driver.find_element(By.XPATH,locators.consultation_date).click()
+        select_Date = self.driver.find_element(By.XPATH,locators.select_Date).click()
+        herd_size = self.driver.find_element(By.XPATH,locators.herd_size).clear()
+        herd_size = self.driver.find_element(By.XPATH,locators.herd_size).send_keys("600")
+        currency = Select(self.driver.find_element(By.XPATH,locators.currency))
+        currency.select_by_index(25)
+        milk_production = self.driver.find_element(By.XPATH,locators.milk_production).clear()
+        milk_production = self.driver.find_element(By.XPATH,locators.milk_production).send_keys("1500")
+        milk_price = self.driver.find_element(By.XPATH, locators.milk_price).clear()
+        milk_price = self.driver.find_element(By.XPATH, locators.milk_price).send_keys("0.5")
+
+        
+            
 
 
 class herd_evaluation(login_before_evaluation):
     def __init__(self, driver):
         super(). __init__(driver)
+    def Client(self, driver):
+        _client_data= herd_evaluation_form(self.driver)
+        _client_data.company()
+        _client_data.dairy()
+        _client_data.contact()
+        _client_data.characteristics()
+        self.driver.find_element(By.XPATH, "//button[@class='btn btn-primary btn-full--sm mt-4 float-right']").click()
+ 
 
-      
-      #  self.grp1(self,driver)
 
-class groups(herd_evaluation):
+class groups():
 
     def grp1(self,driver):
         animal_type=Select(self.driver.find_element(By.NAME,("group_type_of_animal")));

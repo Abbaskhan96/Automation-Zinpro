@@ -5,7 +5,7 @@ from selenium.webdriver.support.ui import WebDriverWait as expWait
 from selenium.webdriver.support import expected_conditions as EC
 from LoginPage import Login, Logout, invalid_Login,locators;
 from Forget_password import Forget_pass;
-from herd_eval import herd_evaluation,quick_evaluation_form, groups;
+from herd_eval import herd_evaluation,herd_evaluation_form, quick_evaluation_form, groups;
 import time
 import unittest
 import HtmlTestRunner
@@ -94,8 +94,14 @@ class TestClass(unittest.TestCase):
 
     def test_05_Herd_evaluation(self):
         self.Launch_driver()
-        groups(self.driver)
+        herd_eval = herd_evaluation(self.driver)
+        client_data = herd_eval.Client(self.driver)
+        
+        
+        
+        time.sleep(3)
 
+  
 
     def tearDown(self):
         self.driver.close()

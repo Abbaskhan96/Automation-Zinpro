@@ -68,6 +68,31 @@ class locators():
     company_name = "//select[@name = 'company']"
     company_country = "//select[@name = 'company_country']"
     company_state = "//div[3]//div[5]//div[1]//select[1]"
-    company_address = "company_address_line_1"
-    company_city = "company_city"
-    company_postal_code = "company_postal_code"
+    company_address = "//input[@name = 'company_address_line_1']"
+    company_city = "//input[@name = 'company_city']"
+    company_postal_code = "//input[@name = 'company_postal_code']"
+
+    #----Dairy------
+    dairy_name = "//select[@name = 'dairy_name']"
+    dairy_country = "//select[@name = 'dairy_country']"
+    dairy_state = "//div[5]//div[5]//div[1]//select[1]"
+    dairy_address = "//input[@name = 'address_1']"
+    dairy_city = "//input[@name = 'city']"
+    dairy_postal_code = "//input[@name = 'postal_code']"
+
+    #---Contact-----
+    contact_name_select = "//select[@data-vv-as='Contact Name']"
+    contact_email = "//input[@name='email_address_1']"
+    contact_business_phone = "//input[@name='business_phone']"
+    
+
+    #---Characteristics----
+    consultation_date = "//input[@name='consultation_date']"
+    select_Date = "//span[@class='cell day selected today']"
+    herd_size = "//input[@name='herd_size']"
+    metric_measurement= "//input[@value='metric']"
+    currency = "//select[@name='currency']"
+    milk_production = "//input[@name='computed_milk_production']"
+    milk_price = "//input[@name='computed_milk_price']"
+
+
