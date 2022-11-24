@@ -178,8 +178,10 @@ class groups():
 
     def grp2(self,driver):
         self.driver = driver
-        animal_type=Select(self.driver.find_element(By.XPATH,("(//select[@data-vv-as='Type of Animal'])[1]")));
-        animal_type.select_by_index("1");
+        animal_type = None
+        animal_type=Select(self.driver.find_element(By.XPATH,("//select[@data-vv-as='Type of Animal']")));
+        animal_type.select_by_visible_text("Close-up");
+        animal_size = None
         animal_size = Select(self.driver.find_element(By.XPATH,("(//select[@data-vv-as='Avg. Cow Size'])[1]")));
         animal_size.select_by_index(3)
         self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("Closed")
@@ -195,13 +197,14 @@ class groups():
 
     def grp3(self,driver):
         self.driver = driver
-        animal_type=Select(self.driver.find_element(By.XPATH,"/html/body/div/main/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/select"));
+        animal_type = None
+        animal_type=Select(self.driver.find_element(By.XPATH,("(//select[@name='group_type_of_animal'])[3]")));
         animal_type.select_by_visible_text("Fresh");
         animal_size = Select(self.driver.find_element(By.XPATH,("(//select[@data-vv-as='Avg. Cow Size'])[1]")));
         animal_size.select_by_index(2)
         self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("Fresh")
         self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_size']").send_keys("75")
-        #self.driver.find_element(By.XPATH,"//input[@name='group_milk_prod']").send_keys("200")
+        self.driver.find_element(By.XPATH,"//input[@name='group_milk_prod']").send_keys("200")
         grp3_total_assessors = quick_evaluation_form.number_of_assessors(self)
         grp3_assessors = quick_evaluation_form.input_assessor_array(self)
         assessors_list.click_assessor_checkbox(self,grp3_assessors)
@@ -211,16 +214,17 @@ class groups():
 
     def grp4(self,driver):
         self.driver = driver
-        animal_type=Select(self.driver.find_element(By.XPATH,"/html/body/div/main/div[1]/div[1]/div/div[2]/div/div[2]/div[2]/div/select"));
-        animal_type.select_by_index("4");
+        animal_type = None
+        animal_type=Select(self.driver.find_element(By.XPATH,("(//select[@name='group_type_of_animal'])[4]")));
+        animal_type.select_by_visible_text("Lactating");
         animal_size = Select(self.driver.find_element(By.XPATH,("(//select[@data-vv-as='Avg. Cow Size'])[1]")));
         animal_size.select_by_index(2)
         self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("Lactating")
         self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_size']").send_keys("220")
-        self.driver.find_element(By.XPATH,"//input[@name='group_milk_prod']").send_keys("1000")
+        self.driver.find_element(By.XPATH,"(//input[@name='group_milk_prod'])[2]").send_keys("1000")
         grp4_total_assessors = quick_evaluation_form.number_of_assessors(self)
         grp4_assessors = quick_evaluation_form.input_assessor_array(self)
-        assessors_list.click_assessor_checkbox(self,grp3_assessors)
+        assessors_list.click_assessor_checkbox(self,grp4_assessors)
         print(grp4_total_assessors,grp4_assessors)
         self.driver.find_element(By.XPATH, "//button[normalize-space()='Add Group']").click()
        # self.driver.find_element(By.XPATH,"//div[contains(@data-toggle , 'collapse') and @aria-expanded = 'true']").click()
