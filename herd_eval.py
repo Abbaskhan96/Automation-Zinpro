@@ -88,7 +88,8 @@ class herd_evaluation_form():
         self.driver.execute_script("window.scrollTo(0, 1800);")
         self.driver.find_element(By.XPATH, locators.herd_btn_xpath).click()
         time.sleep(2)
-        self.driver.find_element(By.NAME,"evaluation_name").send_keys("Herd-Evaluation {}".format(date.today()))
+        self.eval_name = input("Enter Evaluation Name? :")
+        self.driver.find_element(By.NAME,"evaluation_name").send_keys(self.eval_name)
 
     
     def company(self):
@@ -147,6 +148,7 @@ class herd_evaluation_form():
 class herd_evaluation(login_before_evaluation):
     def __init__(self, driver):
         super(). __init__(driver)
+        self.driver = driver
     def Client(self, driver):
         _client_data= herd_evaluation_form(self.driver)
         _client_data.company()
@@ -154,19 +156,31 @@ class herd_evaluation(login_before_evaluation):
         _client_data.contact()
         _client_data.characteristics()
         self.driver.find_element(By.XPATH, "//button[@class='btn btn-primary btn-full--sm mt-4 float-right']").click()
- 
 
+    def ask_for_group(self):
+        group_numbers = int(input("How many group do you want to  proceed??? : "))
+        group_names = [(input("Enter the names of groups you want to add??: ")) for i in range(group_numbers)]
+        return group_names
+ 
+    def group_controller(self, group_names):
+        group = groups(self.driver)
+        group_defined_names = ('closed','faroff','fresh','lactating')
+        call_groups =(group.grp1, group.grp2, group.grp3, group.grp4)
+        group_dict = dict(zip(group_defined_names, call_groups))
+        [group_dict[key]() for key in group_names]
+        
 
 class groups():
-
-    def grp1(self,driver):
-        self.driver = driver
+    def __init__(self,driver):
+        self.driver= driver
+    
+    def grp1(self):
         animal_type=Select(self.driver.find_element(By.NAME,("group_type_of_animal")));
-        animal_type.select_by_visible_text("Far-off");
+        animal_type.select_by_visible_text("Close-up");
         animal_size = Select(self.driver.find_element(By.NAME,("cow_size")));
         animal_size.select_by_index(3)
-        self.driver.find_element(By.NAME,"group_name").send_keys("Faroff")
-        self.driver.find_element(By.NAME, "group_size").send_keys("100")
+        self.driver.find_element(By.NAME,"group_name").send_keys("Closed=up")
+        self.driver.find_element(By.NAME, "group_size").send_keys("90")
         grp1_total_assessors = quick_evaluation_form.number_of_assessors(self)
         grp1_assessors = quick_evaluation_form.input_assessor_array(self)
         assessors_list.click_assessor_checkbox(self,grp1_assessors)
@@ -175,17 +189,16 @@ class groups():
        # self.driver.find_element(By.XPATH,"//div[contains(@data-toggle , 'collapse') and @aria-expanded = 'true']").click()
         time.sleep(2)
 
-
-    def grp2(self,driver):
-        self.driver = driver
+    
+    def grp2(self):
         animal_type = None
         animal_type=Select(self.driver.find_element(By.XPATH,("//select[@data-vv-as='Type of Animal']")));
-        animal_type.select_by_visible_text("Close-up");
+        animal_type.select_by_visible_text("Far-off");
         animal_size = None
         animal_size = Select(self.driver.find_element(By.XPATH,("(//select[@data-vv-as='Avg. Cow Size'])[1]")));
         animal_size.select_by_index(3)
-        self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("Closed")
-        self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_size']").send_keys("90")
+        self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("Faroff")
+        self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_size']").send_keys("100")
         grp2_total_assessors = quick_evaluation_form.number_of_assessors(self)
         grp2_assessors = quick_evaluation_form.input_assessor_array(self)
         assessors_list.click_assessor_checkbox(self,grp2_assessors)
@@ -194,9 +207,8 @@ class groups():
        # self.driver.find_element(By.XPATH,"//div[contains(@data-toggle , 'collapse') and @aria-expanded = 'true']").click()
 
 
-
-    def grp3(self,driver):
-        self.driver = driver
+    
+    def grp3(self):
         animal_type = None
         animal_type=Select(self.driver.find_element(By.XPATH,("(//select[@name='group_type_of_animal'])[3]")));
         animal_type.select_by_visible_text("Fresh");
@@ -212,8 +224,8 @@ class groups():
         self.driver.find_element(By.XPATH, "//button[normalize-space()='Add Group']").click()
        # self.driver.find_element(By.XPATH,"//div[contains(@data-toggle , 'collapse') and @aria-expanded = 'true']").click()
 
-    def grp4(self,driver):
-        self.driver = driver
+    
+    def grp4(self):
         animal_type = None
         animal_type=Select(self.driver.find_element(By.XPATH,("(//select[@name='group_type_of_animal'])[4]")));
         animal_type.select_by_visible_text("Lactating");
