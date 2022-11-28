@@ -115,10 +115,8 @@ class TestClass(unittest.TestCase):
         my_union_list.sort()
         print(my_union_list)
 
-        # click_next = assessors_list(self.driver)
-       # click_next.click_next()
-        #assessors.click_next()
-        time.sleep(3)
+        click_next = assessors_list(self.driver)
+        click_next.herd_click_next()
 
   
 

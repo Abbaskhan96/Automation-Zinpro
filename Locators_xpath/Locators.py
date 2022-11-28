@@ -62,7 +62,9 @@ class locators():
     Bio_security = " /html/body/div/main/div[1]/div[1]/div/div[2]/div/div[5]/div[2]/div/label[1]/span"
     
 #---------------Herd-Evaluation-------------------------|
-
+    herd_next_path = "//button[@class='btn btn-primary btn-full--sm float-right ml-0 ml-md-4 mt-2 mt-md-0 order-md-2']"
+    herd_assessor_sort_path = "//button[@class='btn btn-primary btn-block--xs pull-right']"
+   
     #---Company-----
     company_name = "//select[@name = 'company']"
     company_country = "//select[@name = 'company_country']"

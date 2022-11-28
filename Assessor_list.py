@@ -24,6 +24,11 @@ class assessors_list():
         self.driver.find_element(By.XPATH, locators.assesor_sort_path).click()
         time.sleep(3)
         
+    def herd_click_next(self):
+        self.driver.find_element(By.XPATH, locators.herd_next_path).click()
+        self.driver.find_element(By.XPATH, locators.herd_assessor_sort_path).click()
+        time.sleep(3)
+        
 
     
     #checking that if Both Reports, Next Assessor buttons are not && in assessor details page it should be clicked on Reports

@@ -195,9 +195,9 @@ class groups():
     
     def grp2(self):
         animal_type = None
-        animal_type=Select(self.driver.find_element(By.XPATH,("//select[@data-vv-as='Type of Animal']")));
-        #animal_type=Select(self.driver.find_element(By.NAME, "group_type_of_animal"));
-        animal_type.select_by_visible_text("Far-off");
+        (self.driver.find_element(By.CSS_SELECTOR,(".form-control[data-vv-as='Type of Animal']"))).click();
+        time.sleep(1)
+        (self.driver.find_element(By.XPATH,("//select[@data-vv-as='Type of Animal']//option[@value='far-off'][normalize-space()='Far-off']"))).click();
         animal_size = None
         animal_size = Select(self.driver.find_element(By.XPATH,("(//select[@data-vv-as='Avg. Cow Size'])")));
         #animal_type=Select(self.driver.find_element(By.NAME, "cow_size")); 
