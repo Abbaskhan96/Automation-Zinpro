@@ -3,13 +3,15 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 import time
 import sys
-sys.path.append("C:/Users/CDC.CDC-PC/source/repos/Automation-Zinpro/Assessors_access")
-sys.path.append("C:/Users/Muhammad Abbas Khan/source/repos/Automation-Zinpro/Assessors_access")
-from Heat_Abatement import heat_assessor;
+sys.path.append("C:/Users/CDC.CDC-PC/source/repos/Automation-Zinpro/Locators_xpath/Assessors_access")
+sys.path.append("C:/Users/Muhammad Abbas Khan/Source/Repos/Automation-Zinpro/Locators_xpath/Assessors_access")
 from Dirt_Alot import Dirt_alot;
 from Locomotion import Locomotion_score;
-from Locators import locators
+from Locators import locators;
 from BioSecurity import BioSecurity;
+from Heat_Abatement import heat_assessor
+
+
 class assessors_list():
    
     def __init__(self, driver):
