@@ -95,6 +95,7 @@ class TestClass(unittest.TestCase):
 
     def test_05_Herd_evaluation(self):
         self.Launch_driver()
+        assessors = assessors_list(self.driver)
         herd_eval = herd_evaluation(self.driver)
         client_data = herd_eval.Client(self.driver)
     #    group = groups(self.driver)
@@ -107,10 +108,16 @@ class TestClass(unittest.TestCase):
         group_names.sort()
         group_names = tuple(group_names)
         print(group_names)
-        herd_eval.group_controller(group_names)
-       # click_next = assessors_list(self.driver)
-       # click_next.click_next()
+        sum_of_assessors = herd_eval.group_controller(group_names)
+        print(sum_of_assessors)
+        my_union_list = set().union(*sum_of_assessors)
+        my_union_list = list(my_union_list)
+        my_union_list.sort()
+        print(my_union_list)
 
+        # click_next = assessors_list(self.driver)
+       # click_next.click_next()
+        #assessors.click_next()
         time.sleep(3)
 
   
