@@ -220,6 +220,7 @@ class groups():
     
     def grp3(self):
         animal_type = None
+        time.sleep(2)
         #animal_type=Select(self.driver.find_element(By.XPATH,("(//select[@name='group_type_of_animal'])[3]")));
         (self.driver.find_element(By.CSS_SELECTOR,(".form-control[data-vv-as='Type of Animal']"))).click();
         (self.driver.find_element(By.XPATH,("//select[@data-vv-as='Type of Animal']//option[@value='fresh'][normalize-space()='Fresh']"))).click();
