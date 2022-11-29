@@ -159,9 +159,13 @@ class herd_evaluation(login_before_evaluation):
 
     def ask_for_group(self):
         group_numbers = int(input("How many group do you want to  proceed??? : "))
-        group_names = [(input("Enter the names of groups you want to add??: ")) for i in range(group_numbers)]
-        return group_names
- 
+        
+        if not group_numbers == 4:
+            group_names = [(input("Enter the names of groups you want to add??: ")) for i in range(group_numbers)]
+            return group_names
+        else:
+            return ['closed','faroff','fresh','lactating']
+
     def group_controller(self, group_names):
         group = groups(self.driver)
         group_defined_names = ('closed','faroff','fresh','lactating')

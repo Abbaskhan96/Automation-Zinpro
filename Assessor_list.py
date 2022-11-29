@@ -5,6 +5,7 @@ import time
 import sys
 sys.path.append("C:/Users/CDC.CDC-PC/source/repos/Automation-Zinpro/Locators_xpath/Assessors_access")
 sys.path.append("C:/Users/Muhammad Abbas Khan/Source/Repos/Automation-Zinpro/Locators_xpath/Assessors_access")
+sys.path.append("C:/Users/Muhammad Abbas Khan/Source/Repos/Automation-Zinpro/Locators_xpath")
 from Dirt_Alot import Dirt_alot;
 from Locomotion import Locomotion_score;
 from Locators import locators;
@@ -41,6 +42,7 @@ class assessors_list():
            # print(self.ask[i],self.ask[-1],type(self.ask[-1]))
             self.select_assessor(self.ask[i])
             if i == (len(self.ask)-1):
+                #clicking report button
                 self.driver.find_element(By.XPATH,"//a[@class='btn btn-primary btn-full--sm pull-right']").click()
                 time.sleep(3)
                 break;

@@ -4,12 +4,13 @@ class locators():
 #======================ALL-TEST-DATA=====================================
 #Valid - username/password data
     usernames = [
+           ("zinprorepresentative@mailinator.com"),
            ("abbasAdvCustomer@mailinator.com"),
            ("abbasAdmin@mailinator.com"),
            ("abbasZinPro@mailinator.com"),
            ("moiz@mailinator.com")
            ]
-    passwords=["Abbas@123"]
+    passwords=["12345678","Abbas@123"]
 
 #InValid - username/password data
     invalid_usernames = [
