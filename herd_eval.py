@@ -25,11 +25,12 @@ class login_before_evaluation():
 class quick_evaluation_form():
     def __init__(self,driver):
         self.driver=driver
+        time.sleep(4)
         self.driver.find_element(By.XPATH,locators.eval_quick_bton_xpath).click()
-        self.assessor_details = assessors_list(self.driver);
-        self.assessor_details.click_assessor_checkbox(self.ask)
-        self.assessor_details.click_next(self)
-        self.assessor_details.click_Assessor_Filter_btn(self.ask)
+       # self.assessor_details = assessors_list(self.driver);
+       # self.assessor_details.click_assessor_checkbox(self.ask)
+       # self.assessor_details.click_next(self)
+        #self.assessor_details.click_Assessor_Filter_btn(self.ask)
    
 
     def select_Animal_type(self):
@@ -65,9 +66,11 @@ class quick_evaluation_form():
         time.sleep(1)
 
     def eval_name(self):
-        self.driver.find_element(By.NAME,"evaluation_name").send_keys("Quick-Evaluation {}".format(datetime.now()))
+        self.eval_name = input("Enter the name of your Quick Evaluation : ")
+        self.driver.find_element(By.NAME,"evaluation_name").send_keys("{}".format(self.eval_name))
         self.driver.find_element(By.NAME,"pen_name").send_keys("pen-01-Faroff")
         self.driver.find_element(By.NAME, "pen_size").send_keys("100")
+        return "closed"
         time.sleep(1);
 
     def number_of_assessors(self):
@@ -76,9 +79,14 @@ class quick_evaluation_form():
         return self.numbers_assessors
 
     def input_assessor_array(self):
+        self.number_of_assessors()
         [self.ask.append(input("Enter Array no of selected Assessor no {} : ".format(i+1))) for i in range(self.numbers_assessors)]
         self.ask.sort()
-        print(self.ask)
+       # print(self.ask)
+        self.assessor_details = assessors_list(self.driver);
+        self.assessor_details.click_assessor_checkbox(self.ask)
+        self.assessor_details.click_next()
+        self.assessor_details.click_Assessor_Filter_btn(self.ask)
         return self.ask
 
 

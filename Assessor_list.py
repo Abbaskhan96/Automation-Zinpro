@@ -35,6 +35,12 @@ class assessors_list():
     #checking that if Both Reports, Next Assessor buttons are not && in assessor details page it should be clicked on Reports
     #else only Next Assessor button clicked
     
+    def returning_mydict(self,names,assessors):
+        dict2 = dict(zip(names,sumOfAssessors))
+        return dict2
+
+
+
     def click_Assessor_Filter_btn(self,ask):
         self.ask= ask
         for i in range(len(self.ask)):

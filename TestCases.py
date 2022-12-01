@@ -90,8 +90,12 @@ class TestClass(unittest.TestCase):
         eval_form.select_currency();
         eval_form.measurements()
         eval_form.date_picker()
-        eval_form.eval_name()
-        eval_form.input_assessor_array();
+        group_name = eval_form.eval_name()
+        selected_assessors = eval_form.input_assessor_array();
+      
+        assessors = assessors_list(self.driver)
+        dictionary = assessors.returning_mydict(group_name, selected_assessors)
+        print(dictionary)
 
 
     def test_05_Herd_evaluation(self):
@@ -126,9 +130,9 @@ class TestClass(unittest.TestCase):
         self.driver.quit()
 
 suite = unittest.TestSuite()
-#suite.addTest(TestClass("test_04_Quick_evaluation"))
+suite.addTest(TestClass("test_04_Quick_evaluation"))
 #suite.addTest(TestClass("test_01_login"))
-suite.addTest(TestClass("test_05_Herd_evaluation"))
+#suite.addTest(TestClass("test_05_Herd_evaluation"))
 
 
 if __name__ == "__main__":
