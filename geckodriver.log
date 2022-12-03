@@ -8790,3 +8790,40 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 DevTools listening on ws://127.0.0.1:58997/devtools/browser/04277352-16c3-4877-9bc3-9cdd7bd1e63a
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk2.zinprofirststep.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk2.zinprofirststep.com."
+1669930102923	geckodriver	INFO	Listening on 127.0.0.1:50827
+1669930104837	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "50828" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\CDC~1.CDC\\AppData\\Local\\Temp\\rust_mozprofile5ULS86"
+1669930108311	Marionette	INFO	Marionette enabled
+1669930108326	Marionette	INFO	Listening on port 50838
+Read port: 50838
+WebDriver BiDi listening on ws://127.0.0.1:50828
+1669930108601	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\CDC~1.CDC\\AppData\\Local\\Temp\\rust_mozprofile5ULS86\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50828/devtools/browser/cbcface8-3ead-401b-b823-e2d6f3d60c01
+JavaScript error: https://hk2.zinprofirststep.com/js/chunk-vendors.7ed3455e.js, line 15: Error: Invalid HTML: could not find <table>
+1669930200357	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk2.zinprofirststep.com."
+1669930214231	Marionette	WARN	TimedPromise timed out after 500 ms: stacktrace:
+TimedPromise/<@chrome://remote/content/marionette/sync.js:236:24
+TimedPromise@chrome://remote/content/marionette/sync.js:221:10
+interaction.flushEventLoop@chrome://remote/content/marionette/interaction.js:431:10
+webdriverClickElement@chrome://remote/content/marionette/interaction.js:179:31
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk2.zinprofirststep.com."
+1669930947455	geckodriver	INFO	Listening on 127.0.0.1:51251
+1669930949135	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "51252" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\CDC~1.CDC\\AppData\\Local\\Temp\\rust_mozprofile2ci5y2"
+1669930959886	Marionette	INFO	Marionette enabled
+1669930959932	Marionette	INFO	Listening on port 51264
+Read port: 51264
+Read port: 51264
+WebDriver BiDi listening on ws://127.0.0.1:51252
+1669930963103	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 768))
+console.error: Region.jsm: "Failed to fetch region" (new Error("TIMEOUT", "resource://gre/modules/Region.jsm", 420))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\CDC~1.CDC\\AppData\\Local\\Temp\\rust_mozprofile2ci5y2\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51252/devtools/browser/b4b08d8c-7103-4cde-9ca9-8e41e998f034
+JavaScript error: https://hk2.zinprofirststep.com/js/chunk-vendors.7ed3455e.js, line 15: Error: Invalid HTML: could not find <table>
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk2.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://hk2.zinprofirststep.com."

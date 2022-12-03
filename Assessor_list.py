@@ -36,7 +36,7 @@ class assessors_list():
     #else only Next Assessor button clicked
     
     def returning_mydict(self,names,assessors):
-        dict2 = dict(zip(names,sumOfAssessors))
+        dict2 = dict(zip(names,assessors))
         return dict2
 
 
