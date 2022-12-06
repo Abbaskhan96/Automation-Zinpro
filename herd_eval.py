@@ -68,9 +68,9 @@ class quick_evaluation_form():
     def eval_name(self):
         self.eval_name = input("Enter the name of your Quick Evaluation : ")
         self.driver.find_element(By.NAME,"evaluation_name").send_keys("{}".format(self.eval_name))
-        self.driver.find_element(By.NAME,"pen_name").send_keys("pen-01-Faroff")
+        self.driver.find_element(By.NAME,"pen_name").send_keys("closed")
         self.driver.find_element(By.NAME, "pen_size").send_keys("100")
-        return "closed"
+        return ["closed"]
         time.sleep(1);
 
     def number_of_assessors(self):
@@ -79,16 +79,12 @@ class quick_evaluation_form():
         return self.numbers_assessors
 
     def input_assessor_array(self):
-        self.number_of_assessors()
         [self.ask.append(input("Enter Array no of selected Assessor no {} : ".format(i+1))) for i in range(self.numbers_assessors)]
-        self.ask.sort()
        # print(self.ask)
         self.assessor_details = assessors_list(self.driver);
         self.assessor_details.click_assessor_checkbox(self.ask)
-        self.assessor_details.click_next()
-        self.assessor_details.click_Assessor_Filter_btn(self.ask)
+        self.ask.sort()
         return self.ask
-
 
 class herd_evaluation_form():
     def __init__(self, driver):
@@ -193,11 +189,11 @@ class groups():
         animal_type.select_by_visible_text("Close-up");
         animal_size = Select(self.driver.find_element(By.NAME,("cow_size")));
         animal_size.select_by_index(3)
-        self.driver.find_element(By.NAME,"group_name").send_keys("Closed-up")
+        self.driver.find_element(By.NAME,"group_name").send_keys("closed")
         self.driver.find_element(By.NAME, "group_size").send_keys("90")
         grp1_total_assessors = quick_evaluation_form.number_of_assessors(self)
         grp1_assessors = quick_evaluation_form.input_assessor_array(self)
-        assessors_list.click_assessor_checkbox(self,grp1_assessors)
+       # assessors_list.click_assessor_checkbox(self,grp1_assessors)
         print(grp1_total_assessors,grp1_assessors)
         self.driver.find_element(By.XPATH, "//button[normalize-space()='Add Group']").click()
         return grp1_assessors
@@ -215,14 +211,14 @@ class groups():
         #animal_type=Select(self.driver.find_element(By.NAME, "cow_size")); 
         animal_size.select_by_index(3)
         self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").clear()
-        self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("Faroff")
+        self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("faroff")
         #self.driver.find_element(By.NAME,"group_name").send_keys("Faroff")
         self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_size']").clear()
         self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_size']").send_keys("100")
         #self.driver.find_element(By.NAME,"group_size").send_keys("100")
         grp2_total_assessors = quick_evaluation_form.number_of_assessors(self)
         grp2_assessors = quick_evaluation_form.input_assessor_array(self)
-        assessors_list.click_assessor_checkbox(self,grp2_assessors)
+       # assessors_list.click_assessor_checkbox(self,grp2_assessors)
         print(grp2_total_assessors,grp2_assessors)
         self.driver.find_element(By.XPATH, "//button[normalize-space()='Add Group']").click()
         return grp2_assessors
@@ -243,7 +239,7 @@ class groups():
         animal_size = Select(self.driver.find_element(By.XPATH,("(//select[@data-vv-as='Avg. Cow Size'])")));
         animal_size.select_by_index(2)
         self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").clear()
-        self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("Fresh")
+        self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("fresh")
         self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_size']").clear()
         self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_size']").send_keys("75")
         #self.driver.find_element(By.XPATH,"//input[@name='group_milk_prod']").clear()
@@ -252,7 +248,7 @@ class groups():
         self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_milk_prod']").send_keys("200")
         grp3_total_assessors = quick_evaluation_form.number_of_assessors(self)
         grp3_assessors = quick_evaluation_form.input_assessor_array(self)
-        assessors_list.click_assessor_checkbox(self,grp3_assessors)
+    #    assessors_list.click_assessor_checkbox(self,grp3_assessors)
         print(grp3_total_assessors,grp3_assessors)
         self.driver.find_element(By.XPATH, "//button[normalize-space()='Add Group']").click()
         return grp3_assessors
@@ -269,7 +265,7 @@ class groups():
         animal_size = Select(self.driver.find_element(By.XPATH,("(//select[@data-vv-as='Avg. Cow Size'])")));
         animal_size.select_by_index(2)
         self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").clear()
-        self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("Lactating")
+        self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("lactating")
         self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_size']").clear()
         self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_size']").send_keys("220")
         #self.driver.find_element(By.XPATH,"//input[@name='group_milk_prod']").clear()
@@ -277,7 +273,7 @@ class groups():
         self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_milk_prod']").send_keys("1000")
         grp4_total_assessors = quick_evaluation_form.number_of_assessors(self)
         grp4_assessors = quick_evaluation_form.input_assessor_array(self)
-        assessors_list.click_assessor_checkbox(self,grp4_assessors)
+    #    assessors_list.click_assessor_checkbox(self,grp4_assessors)
         print(grp4_total_assessors,grp4_assessors)
         self.driver.find_element(By.XPATH, "//button[normalize-space()='Add Group']").click()
         return grp4_assessors

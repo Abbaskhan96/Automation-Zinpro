@@ -31,10 +31,10 @@ class TestClass(unittest.TestCase):
         
         
     def Launch_driver(self):
-       # link = "https://sgp2.zinprofirststep.com/login" 
+        link = "https://sgp2.zinprofirststep.com/login" 
         #link = "https://sgp1.zinprofirststep.com/login" 
         #link = "https://hk1.zinprofirststep.com"
-        link = "https://hk2.zinprofirststep.com"
+        #link = "https://hk2.zinprofirststep.com"
         self.driver.get(link)
         self.driver.maximize_window()
         self.driver.find_element(By.XPATH,"//i[@class='fa fa-times']").click()
@@ -92,10 +92,17 @@ class TestClass(unittest.TestCase):
         eval_form.date_picker()
         group_name = eval_form.eval_name()
         selected_assessors = eval_form.input_assessor_array();
+
       
         assessors = assessors_list(self.driver)
-        dictionary = assessors.returning_mydict(group_name, selected_assessors)
-        print(dictionary)
+        print(selected_assessors)
+        print(group_name)
+        assessors.click_next()
+        assessors.click_Assessor_Filter_btn(self.ask)
+       # group_name = group_name * len(selected_assessors)
+       # print(group_name)
+       # dictionary = assessors.returning_mydict(group_name, selected_assessors)
+       # print(dictionary)
 
 
     def test_05_Herd_evaluation(self):
@@ -115,13 +122,14 @@ class TestClass(unittest.TestCase):
         print(group_names)
         sum_of_assessors = herd_eval.group_controller(group_names)
         print(sum_of_assessors)
-        my_union_list = set().union(*sum_of_assessors)
-        my_union_list = list(my_union_list)
-        my_union_list.sort()
-        print(my_union_list)
+       # my_union_list = set().union(*sum_of_assessors)
+       #my_union_list = list(my_union_list)
+       # my_union_list.sort()
+       # print(my_union_list)
         time.sleep(2)
-        click_next = assessors_list(self.driver)
-        click_next.herd_click_next()
+        assessors = assessors_list(self.driver)
+        assessors.herd_click_next()
+        assessors.by_group(group_names, sum_of_assessors)
 
   
 
@@ -130,9 +138,9 @@ class TestClass(unittest.TestCase):
         self.driver.quit()
 
 suite = unittest.TestSuite()
-suite.addTest(TestClass("test_04_Quick_evaluation"))
+#suite.addTest(TestClass("test_04_Quick_evaluation"))
 #suite.addTest(TestClass("test_01_login"))
-#suite.addTest(TestClass("test_05_Herd_evaluation"))
+suite.addTest(TestClass("test_05_Herd_evaluation"))
 
 
 if __name__ == "__main__":

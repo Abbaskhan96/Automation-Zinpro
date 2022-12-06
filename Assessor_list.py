@@ -35,9 +35,34 @@ class assessors_list():
     #checking that if Both Reports, Next Assessor buttons are not && in assessor details page it should be clicked on Reports
     #else only Next Assessor button clicked
     
-    def returning_mydict(self,names,assessors):
-        dict2 = dict(zip(names,sumOfAssessors))
-        return dict2
+    def by_group(self,names,assessors):
+        dict2 = dict(zip(names,assessors))
+        print(dict2)
+        for key in dict2.keys():
+            self.driver.find_element(By.XPATH, locators.group_dropdown).click()
+            print(key)
+            time.sleep(2)
+            self.driver.find_element(By.XPATH, "//a[@class='dropdown-item__link'][normalize-space()='{}']".format(key)).click()
+            time.sleep(3)
+            for values in dict2.get(key):
+                self.select_assessor(key, values, names, assessors, dict2)
+
+
+    def for_clicking_next_report(self, key, values, names, assessors, dict2):
+        if not (key == (names[-1]) and values == dict2.get(key)[-1]):
+            print("Next selected", names[-1], key, assessors[-1], values, "the dict is : ", dict2.get(key)[-1])
+            self.driver.find_element(By.XPATH,"//span[normalize-space()='Next Assessor']").click()
+        else:
+            if values in assessors[-1]:
+                print(key)
+                if values == assessors[-1][-1]:
+                    print(values)
+                    #clicking report button
+                    self.driver.find_element(By.XPATH,"//a[@class='btn btn-primary btn-full--sm pull-right']").click()
+                    time.sleep(4)
+                else:
+                    self.driver.find_element(By.XPATH,"//span[normalize-space()='Next Assessor']").click()
+
 
 
 
@@ -59,34 +84,45 @@ class assessors_list():
       
        
 
-    def select_assessor(self,arg):
-        self.arg = arg 
-        print(self.arg)
-        if "1" == self.arg:
+    def select_assessor(self, arg, values, names, assessors, dict2):
+        self.values = values
+        print(arg)
+        print(self.values)
+        print(names)
+        print(assessors)
+        if ("1" == self.values):
             #---Selecting DirAlot CheckBox
                 #self.driver.find_element(By.XPATH,((locators.locomotion_checkbox))).click() 
              print("Locomotion Assessor is Temporarely Selected...")
              Locomotion_score(self.driver)
-             self.arg=None
              #self.click_Assessor_Filter_btn(self.ask)
+             self.for_clicking_next_report(arg, self.values, names, assessors, dict2)
+             self.arg=None
+             self.values = None
              time.sleep(2)
 
 
-        elif "8" == self.arg:
+        elif "8" == self.values:
             print("Bio Security is selected")
             BioSecurity(self.driver)
+            self.for_clicking_next_report(arg, self.values, names, assessors, dict2)
             self.arg=None
+            self.values = None
             time.sleep(2)
 
 
-        elif "14" == self.arg:
+
+        elif "14" == self.values:
             print("Dirt Alot is selected...")
             dirt_alot_start = Dirt_alot(self.driver)
+            self.for_clicking_next_report(arg, self.values, names, assessors, dict2)
             self.arg=None
+            self.values = None
             time.sleep(2)
 
 
-        elif "15" == self.arg:
+
+        elif "15" == self.values:
                 #---Selecting Heat-Abatement CheckBox
                 #self.driver.find_element(By.NAME,"evaluation_name").clear()
                 #self.driver.find_element(By.NAME,"evaluation_name").send_keys("Quick-Evaluation-Heat-Abatement")
@@ -94,8 +130,11 @@ class assessors_list():
              heat_assessor_start = heat_assessor(self.driver)
              heat_assessor_start.selecting_dropdown()
              heat_assessor_start.input_values()
+             self.for_clicking_next_report(arg, self.values, names, assessors, dict2)
              self.arg=None
-             time.sleep(1)
+             self.values = None
+             time.sleep(2)
+
         
 
     def click_assessor_checkbox(self, ask):
