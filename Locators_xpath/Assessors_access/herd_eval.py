@@ -79,13 +79,16 @@ class quick_evaluation_form():
         return self.numbers_assessors
 
     def input_assessor_array(self):
-        #self.number_of_assessors()
+       # self.number_of_assessors()
         [self.ask.append(input("Enter Array no of selected Assessor no {} : ".format(i+1))) for i in range(self.numbers_assessors)]
-       # print(self.ask)
-        #self.assessor_details = assessors_list(self.driver);
-        #self.assessor_details.click_assessor_checkbox(self.ask)
         self.ask.sort()
+       # print(self.ask)
+        self.assessor_details = assessors_list(self.driver);
+      #  self.assessor_details.click_assessor_checkbox(self.ask)
+  #      self.assessor_details.click_next()
+       # self.assessor_details.click_Assessor_Filter_btn(self.ask)
         return self.ask
+
 
 class herd_evaluation_form():
     def __init__(self, driver):
@@ -190,9 +193,10 @@ class groups():
         animal_type.select_by_visible_text("Close-up");
         animal_size = Select(self.driver.find_element(By.NAME,("cow_size")));
         animal_size.select_by_index(3)
-        self.driver.find_element(By.NAME,"group_name").send_keys("closed")
+        self.driver.find_element(By.NAME,"group_name").send_keys("Closed-up")
         self.driver.find_element(By.NAME, "group_size").send_keys("90")
         grp1_total_assessors = quick_evaluation_form.number_of_assessors(self)
+        grp1_assessors = quick_evaluation_form(self.driver)
         grp1_assessors = quick_evaluation_form.input_assessor_array(self)
         assessors_list.click_assessor_checkbox(self,grp1_assessors)
         print(grp1_total_assessors,grp1_assessors)
@@ -212,7 +216,7 @@ class groups():
         #animal_type=Select(self.driver.find_element(By.NAME, "cow_size")); 
         animal_size.select_by_index(3)
         self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").clear()
-        self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("faroff")
+        self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("Faroff")
         #self.driver.find_element(By.NAME,"group_name").send_keys("Faroff")
         self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_size']").clear()
         self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_size']").send_keys("100")
@@ -240,7 +244,7 @@ class groups():
         animal_size = Select(self.driver.find_element(By.XPATH,("(//select[@data-vv-as='Avg. Cow Size'])")));
         animal_size.select_by_index(2)
         self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").clear()
-        self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("fresh")
+        self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("Fresh")
         self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_size']").clear()
         self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_size']").send_keys("75")
         #self.driver.find_element(By.XPATH,"//input[@name='group_milk_prod']").clear()
@@ -266,7 +270,7 @@ class groups():
         animal_size = Select(self.driver.find_element(By.XPATH,("(//select[@data-vv-as='Avg. Cow Size'])")));
         animal_size.select_by_index(2)
         self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").clear()
-        self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("lactating")
+        self.driver.find_element(By.XPATH,"//div[@class='col-md-12']//input[@name='group_name']").send_keys("Lactating")
         self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_size']").clear()
         self.driver.find_element(By.XPATH,"//div[@class='col-md-6']//input[@name='group_size']").send_keys("220")
         #self.driver.find_element(By.XPATH,"//input[@name='group_milk_prod']").clear()
