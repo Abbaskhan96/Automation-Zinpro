@@ -140,7 +140,7 @@ class TestClass(unittest.TestCase):
         self.driver.quit()
 
 suite = unittest.TestSuite()
-suite.addTest(TestClass("test_05_Herd_evaluation"))
+suite.addTests([TestClass("test_04_Quick_evaluation"),TestClass("test_05_Herd_evaluation")])
 
 #suite.addTest(TestClass("test_01_login"))
 #suite.addTest(TestClass("test_05_Herd_evaluation"))

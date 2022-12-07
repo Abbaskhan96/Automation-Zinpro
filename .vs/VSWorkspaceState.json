@@ -2,8 +2,8 @@
   "ExpandedNodes": [
     "",
     "\\All_assessors_xpath",
-    "\\Locators_xpath"
+    "\\Locators_xpath",
+    "\\Locators_xpath\\Assessors_access"
   ],
-  "SelectedNode": "\\TestCases.py",
   "PreviewInSolutionExplorer": false
 }

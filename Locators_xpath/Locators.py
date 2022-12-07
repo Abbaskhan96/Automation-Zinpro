@@ -53,13 +53,11 @@ class locators():
     Next_path = "//button[@class='btn btn-primary btn-full--sm mt-4 float-right']"
     assesor_sort_path = "//button[@class='btn btn-primary btn-block--xs pull-right']"
     
-
-    locomotion_checkbox = "//div[(@class = 'row checkbox-grid') or (@class = 'row assessors-list')]//div[12]//div//label//span"      
-    heat_abatement_checbox = "//div[(@class = 'row checkbox-grid') or (@class = 'row assessors-list')]//div[6]//div//label//span"
-    #Dirt_Alot_checkbox = "//div[@class='card-body card-body--group mt-4']//div[3]//div[1]//label[1]//span[1]"
-    #Dirt_Alot_checkbox = "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div/div[5]/div[3]/div/label[1]/span"
-    Dirt_Alot_checkbox = "//div[(@class = 'row checkbox-grid') or (@class = 'row assessors-list')]//div[3]//div//label//span"
-    Bio_security = "//div[(@class = 'row checkbox-grid') or (@class = 'row assessors-list')]//div[2]//div//label//span"
+                            
+    locomotion_checkbox = "//div[(@class = 'card card--grey') or (@class = 'card-body')]//div[(@class = 'row checkbox-grid') or (@class = 'row assessors-list')]//div[12]//div//label//span"
+    heat_abatement_checbox = "//div[(@class = 'card card--grey') or (@class = 'card-body')]//div[(@class = 'row checkbox-grid') or (@class = 'row assessors-list')]//div[6]//div//label//span"
+    Dirt_Alot_checkbox = "//div[(@class = 'card card--grey') or (@class = 'card-body')]//div[(@class = 'row checkbox-grid') or (@class = 'row assessors-list')]//div[3]//div//label//span"
+    Bio_security = "//div[(@class = 'card card--grey') or (@class = 'card-body')]//div[(@class = 'row checkbox-grid') or (@class = 'row assessors-list')]//div[2]//div//label//span"
     
 #---------------Herd-Evaluation-------------------------|
     herd_next_path = "//button[@class='btn btn-primary btn-full--sm float-right ml-0 ml-md-4 mt-2 mt-md-0 order-md-2']"

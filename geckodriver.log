@@ -10135,3 +10135,44 @@ console.warn: SearchSettings: "get: No settings file exists, new profile?" (new 
 DevTools listening on ws://127.0.0.1:60608/devtools/browser/62a37189-3738-421d-b20a-d1ca5a7f6ad6
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp2.zinprofirststep.com."
 console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp2.zinprofirststep.com."
+1670440467330	geckodriver	INFO	Listening on 127.0.0.1:50758
+1670440469297	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "50759" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\CDC~1.CDC\\AppData\\Local\\Temp\\rust_mozprofile30nzuB"
+1670440472184	Marionette	INFO	Marionette enabled
+1670440472194	Marionette	INFO	Listening on port 50773
+Read port: 50773
+Read port: 50773
+WebDriver BiDi listening on ws://127.0.0.1:50759
+1670440475324	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.error: Region.jsm: "Error fetching region" (new AbortError("The operation was aborted. ", (void 0), 766))
+console.error: Region.jsm: "Failed to fetch region" (new Error("NO_RESULT", "resource://gre/modules/Region.jsm", 420))
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\CDC~1.CDC\\AppData\\Local\\Temp\\rust_mozprofile30nzuB\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:50759/devtools/browser/6a45e8a0-662d-44d4-a42e-0f3d1e7cce4e
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp2.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp2.zinprofirststep.com."
+1670440596040	Marionette	INFO	Stopped listening on port 50773
+[Parent 6256, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1670440785856	geckodriver	INFO	Listening on 127.0.0.1:51170
+1670440787807	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "51171" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\CDC~1.CDC\\AppData\\Local\\Temp\\rust_mozprofileWkz9cb"
+1670440790162	Marionette	INFO	Marionette enabled
+1670440790172	Marionette	INFO	Listening on port 51185
+Read port: 51185
+WebDriver BiDi listening on ws://127.0.0.1:51171
+1670440790339	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\CDC~1.CDC\\AppData\\Local\\Temp\\rust_mozprofileWkz9cb\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51171/devtools/browser/164c9d5e-2a5c-4f88-890d-89e836d8672f
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp2.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp2.zinprofirststep.com."
+1670440890552	Marionette	INFO	Stopped listening on port 51185
+[Parent 7224, IPC I/O Parent] WARNING: file /builds/worker/checkouts/gecko/ipc/chromium/src/base/process_util_win.cc:167
+1670440891903	geckodriver	INFO	Listening on 127.0.0.1:51354
+1670440893910	mozrunner::runner	INFO	Running command: "C:/Program Files/Mozilla Firefox/firefox.exe" "--marionette" "--remote-debugging-port" "51355" "--remote-allow-hosts" "localhost" "-no-remote" "-profile" "C:\\Users\\CDC~1.CDC\\AppData\\Local\\Temp\\rust_mozprofileAfR19T"
+1670440896320	Marionette	INFO	Marionette enabled
+1670440896331	Marionette	INFO	Listening on port 51368
+Read port: 51368
+WebDriver BiDi listening on ws://127.0.0.1:51355
+1670440896511	RemoteAgent	WARN	TLS certificate errors will be ignored for this session
+console.warn: SearchSettings: "get: No settings file exists, new profile?" (new NotFoundError("Could not open the file at C:\\Users\\CDC~1.CDC\\AppData\\Local\\Temp\\rust_mozprofileAfR19T\\search.json.mozlz4", (void 0)))
+DevTools listening on ws://127.0.0.1:51355/devtools/browser/4df1fbb9-43ba-4289-a9d3-b11d444107f8
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp2.zinprofirststep.com."
+console.warn: LoginRecipes: "Falling back to a synchronous message for: https://sgp2.zinprofirststep.com."
+1670441126429	Marionette	INFO	Stopped listening on port 51368
