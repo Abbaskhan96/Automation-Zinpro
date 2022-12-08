@@ -27,7 +27,7 @@ class Assessors_HeatAbatement_xpath():
 #_____________________________________|R E S T I N G _ A R E A |________________________________________
 #----------------------------------------Fan's Located in Resting---------------------------------------------- 
         FL_RA_no = "//*[@id='top']/main/div[1]/div/div/div[2]/div[8]/div[2]/div[1]/div[2]/div[1]/label"
-        FL_Ra_yes = "//*[@id='top']/main/div[1]/div/div/div[2]/div[8]/div[2]/div[1]/div[2]/div[2]/label"
+        FL_RA_yes = "//*[@id='top']/main/div[1]/div/div/div[2]/div[8]/div[2]/div[1]/div[2]/div[2]/label"
         HVLS_RA_yes="//*[@id='top']/main/div[1]/div/div/div[2]/div[8]/div[2]/div[2]/div[2]/div[2]/label"
         HVLS_RA_no="//*[@id='top']/main/div[1]/div/div/div[2]/div[8]/div[2]/div[2]/div[2]/div[1]/label"
 #----------------Fans'Temperature?-----------------------|
@@ -72,23 +72,63 @@ class Assessors_HeatAbatement_xpath():
         Shada_unit_yes="//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[12]/div[2]/div[3]/div[2]/div[2]/label"
 #=======================================================================================================================================================
 
-        path = {
-             WA_yes : "//div[4][@class='row']//child::div[2]//child::div[2]//child::label",  
-             Warea_yes : "//div[5][@class='row']//child::div[2]//child::div[2]//child::label",
-             FL_FA_yes : "//div[6][@class='row']//div[3]//child::div[2]//child::div[2]//label",
-             HVLS_FA_no:"//div[6][@class='row']//div[2]//child::div[2]//child::div[1]//label",
-             FL_Ra_yes : "//*[@id='top']/main/div[1]/div/div/div[2]/div[8]/div[2]/div[1]/div[2]/div[2]/label",
-             HVLS_RA_no:"//*[@id='top']/main/div[1]/div/div/div[2]/div[8]/div[2]/div[2]/div[2]/div[1]/label",
-             Soak_FA_yes : "//*[@id='top']/main/div[1]/div/div/div[2]/div[10]/div[2]/div[1]/div[2]/div[2]/label",
-             Soak_RA_yes : "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[10]/div[2]/div[2]/div[2]/div[2]/label",
-             drop_yes:"//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[10]/div[2]/div[3]/div[2]/div[2]/label",
-             SoakFreq_VT_yes: "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[11]/div[4]/div/div[2]/div[2]/label",
-             Shade_FA_yes : "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[12]/div[2]/div[1]/div[2]/div[2]/label",
-             Shade_RA_yes : "//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[12]/div[2]/div[2]/div[2]/div[2]/label",
-             Shada_unit_yes:"//*[@id='top']/main/div[1]/div[1]/div/div[2]/div[12]/div[2]/div[3]/div[2]/div[2]/label"
-            }
-
+        
         select_fields = [
             Fan_FA_diamter,
             Fan_RA_diamter
             ]
+
+        path_yes = {
+             WA_yes : WA_yes,
+             Warea_yes : Warea_yes,
+             FL_FA_yes : FL_FA_yes,
+             HVLS_FA_no : HVLS_FA_no,
+             FL_RA_yes : FL_RA_yes,
+             HVLS_RA_no : HVLS_RA_no,
+             Soak_FA_yes : Soak_FA_yes,
+             Soak_RA_yes : Soak_RA_yes,
+             drop_yes : drop_yes,
+             SoakFreq_VT_yes : SoakFreq_VT_yes,
+             Shade_FA_yes : Shade_FA_yes,
+             Shade_RA_yes : Shade_RA_yes,
+             Shada_unit_yes : Shada_unit_yes
+            }
+
+
+        path_no = {
+             WA_no : WA_no,
+             Warea_no : Warea_no,
+             FL_FA_no : FL_FA_no,
+             FL_RA_no : FL_RA_no,
+             Soak_FA_no : Soak_FA_no,
+             Soak_RA_no : Soak_RA_no,
+             Shade_FA_no :Shade_FA_no,
+             Shade_RA_no : Shade_RA_no
+            }
+
+        path_N_A = {
+             WA_no : WA_no,
+             Warea_no : Warea_no,
+             FL_FA_no : FL_FA_no,
+             FL_RA_no : FL_RA_no,
+             Soak_FA_no : Soak_FA_no,
+             Soak_RA_no : Soak_RA_no,
+             Shade_FA_no : Shade_FA_no,
+             Shade_RA_no : Shade_RA_no,   
+            }
+
+        path_yes_no = {
+            WA_no : WA_no,  
+            Warea_no : Warea_no,
+            FL_FA_yes : FL_FA_yes,
+            HVLS_FA_yes: HVLS_FA_yes,
+            FL_RA_yes : FL_RA_yes,
+            HVLS_RA_yes : HVLS_RA_yes,
+            Soak_FA_yes : Soak_FA_yes,
+            Soak_RA_yes: Soak_RA_yes,
+            drop_no: drop_no,
+            SoakFreq_VT_no : SoakFreq_VT_no,
+            Shade_FA_no : Shade_FA_no,
+            Shade_RA_yes : Shade_RA_yes,
+            Shade_unit_no : Shade_unit_no
+            }

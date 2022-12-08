@@ -98,7 +98,7 @@ class assessors_list():
             #---Selecting DirAlot CheckBox
                 #self.driver.find_element(By.XPATH,((locators.locomotion_checkbox))).click() 
              print("Locomotion Assessor is Temporarely Selected...")
-             Locomotion_score(self.driver)
+             Locomotion_score(self.driver, arg)
              #self.click_Assessor_Filter_btn(self.ask)
              self.for_clicking_next_report(arg, self.values, names, assessors, dict2)
              self.arg=None
@@ -108,7 +108,7 @@ class assessors_list():
 
         elif "8" == self.values:
             print("Bio Security is selected")
-            BioSecurity(self.driver)
+            BioSecurity(self.driver, arg)
             self.for_clicking_next_report(arg, self.values, names, assessors, dict2)
             self.arg=None
             self.values = None
@@ -118,7 +118,7 @@ class assessors_list():
 
         elif "14" == self.values:
             print("Dirt Alot is selected...")
-            dirt_alot_start = Dirt_alot(self.driver)
+            dirt_alot_start = Dirt_alot(self.driver, arg)
             self.for_clicking_next_report(arg, self.values, names, assessors, dict2)
             self.arg=None
             self.values = None
@@ -131,9 +131,7 @@ class assessors_list():
                 #self.driver.find_element(By.NAME,"evaluation_name").clear()
                 #self.driver.find_element(By.NAME,"evaluation_name").send_keys("Quick-Evaluation-Heat-Abatement")
              print("Heat Abatement is selected...")
-             heat_assessor_start = heat_assessor(self.driver)
-             heat_assessor_start.selecting_dropdown()
-             heat_assessor_start.input_values()
+             heat_assessor_start = heat_assessor(self.driver, arg)
              self.for_clicking_next_report(arg, self.values, names, assessors, dict2)
              self.arg=None
              self.values = None

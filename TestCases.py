@@ -19,8 +19,8 @@ class TestClass(unittest.TestCase):
         self.option.binary_location= (r"C:/Program Files/Mozilla Firefox/firefox.exe")
         #path = r"C:/Users/Muhammad Abbas Khan/Desktop/Login.unittest/geckodriver.exe"
         #path = r"C:/Users/CDC.CDC-PC/source/repos/PythonProj_1/unittest.login/Login.unittest/geckodriver.exe"
-        path = r"C:/Users/CDC.CDC-PC/source/repos/Automation-Zinpro/geckodriver.exe"
-        #path = r"C:/Users/Muhammad Abbas Khan/source/repos/Automation-Zinpro/geckodriver.exe"
+        #path = r"C:/Users/CDC.CDC-PC/source/repos/Automation-Zinpro/geckodriver.exe"
+        path = r"C:/Users/Muhammad Abbas Khan/source/repos/Automation-Zinpro/geckodriver.exe"
         self.driver = webdriver.Firefox(executable_path = path, options = self.option)
         self.wait_key=5;
         self.var_wait = expWait(self.driver, self.wait_key)
@@ -140,7 +140,7 @@ class TestClass(unittest.TestCase):
         self.driver.quit()
 
 suite = unittest.TestSuite()
-suite.addTests([TestClass("test_04_Quick_evaluation"),TestClass("test_05_Herd_evaluation")])
+suite.addTests([TestClass("test_05_Herd_evaluation")])
 
 #suite.addTest(TestClass("test_01_login"))
 #suite.addTest(TestClass("test_05_Herd_evaluation"))
