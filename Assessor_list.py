@@ -63,6 +63,7 @@ class assessors_list():
                 print(values)
                 #clicking report button
                 self.driver.find_element(By.XPATH,"//a[@class='btn btn-primary btn-full--sm pull-right']").click()
+               # self.driver.find_element(By.XPATH, "//button[@class='btn btn-primary btn-full--sm pull-right']")
                 time.sleep(4)
             if (key == (names[-1]) and not values == assessors[-1][-1]):
                 self.driver.find_element(By.XPATH,"//span[normalize-space()='Next Assessor']").click()
@@ -100,6 +101,7 @@ class assessors_list():
              print("Locomotion Assessor is Temporarely Selected...")
              Locomotion_score(self.driver, arg)
              #self.click_Assessor_Filter_btn(self.ask)
+             self.upload_img(self.values)
              self.for_clicking_next_report(arg, self.values, names, assessors, dict2)
              self.arg=None
              self.values = None
@@ -156,3 +158,13 @@ class assessors_list():
        
         
         time.sleep(2)
+
+
+    def upload_img(self, assessor_no):
+        self.driver.find_element(By.XPATH, "//button[normalize-space()='Upload Images']").click()
+        file = self.driver.find_element(By.XPATH, "//input[@id='files']")
+        file.send_keys("C:/Users/Muhammad Abbas Khan/Documents/pics/01.jpg")
+        self.driver.find_element(By.XPATH, "//div[@class='col-md-12']//button[@type = 'button']").click()
+        time.sleep(6)
+        self.driver.find_element(By.XPATH, "//button[normalize-space()='Done']").click()
+        
