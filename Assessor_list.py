@@ -1,6 +1,8 @@
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
+from selenium.webdriver.support.ui import WebDriverWait as wait
+from selenium.webdriver.support import expected_conditions as EC
 import time
 import sys
 sys.path.append("C:/Users/CDC.CDC-PC/source/repos/Automation-Zinpro/Locators_xpath/Assessors_access")
@@ -11,13 +13,15 @@ from Locomotion import Locomotion_score;
 from Locators import locators;
 from BioSecurity import BioSecurity;
 from Heat_Abatement import heat_assessor
+import autoit
+import pyautogui
 
 
 class assessors_list():
    
     def __init__(self, driver):
         self.driver = driver
-        self.driver.execute_script("window.scrollTo(0, 1800);")
+        self.driver.execute_script("window.scrollTo(0, 2500);")
         
 
     def click_next(self):
@@ -56,7 +60,7 @@ class assessors_list():
     def for_clicking_next_report(self, key, values, names, assessors, dict2):
         if not (key == (names[-1]) or values == dict2.get(key)[-1]):
             print("Next selected", names[-1], key, assessors[-1], values, "the dict is : ", dict2.get(key)[-1])
-            self.driver.find_element(By.XPATH,"//span[normalize-space()='Next Assessor']").click()
+            self.driver.find_element(By.XPATH,"//span[normalize-space() = 'Next Assessor']").click()
         elif values in assessors[-1]:
             print(key)
             if (key == (names[-1]) and values == assessors[-1][-1]):
@@ -66,7 +70,7 @@ class assessors_list():
                # self.driver.find_element(By.XPATH, "//button[@class='btn btn-primary btn-full--sm pull-right']")
                 time.sleep(4)
             if (key == (names[-1]) and not values == assessors[-1][-1]):
-                self.driver.find_element(By.XPATH,"//span[normalize-space()='Next Assessor']").click()
+                self.driver.find_element(By.XPATH,"//span[normalize-space() = 'Next Assessor']").click()
 
 
 
@@ -111,6 +115,7 @@ class assessors_list():
         elif "8" == self.values:
             print("Bio Security is selected")
             BioSecurity(self.driver, arg)
+            self.upload_img(self.values)
             self.for_clicking_next_report(arg, self.values, names, assessors, dict2)
             self.arg=None
             self.values = None
@@ -121,6 +126,7 @@ class assessors_list():
         elif "14" == self.values:
             print("Dirt Alot is selected...")
             dirt_alot_start = Dirt_alot(self.driver, arg)
+            self.upload_img(self.values)
             self.for_clicking_next_report(arg, self.values, names, assessors, dict2)
             self.arg=None
             self.values = None
@@ -134,6 +140,7 @@ class assessors_list():
                 #self.driver.find_element(By.NAME,"evaluation_name").send_keys("Quick-Evaluation-Heat-Abatement")
              print("Heat Abatement is selected...")
              heat_assessor_start = heat_assessor(self.driver, arg)
+             self.upload_img(self.values)
              self.for_clicking_next_report(arg, self.values, names, assessors, dict2)
              self.arg=None
              self.values = None
@@ -162,9 +169,20 @@ class assessors_list():
 
     def upload_img(self, assessor_no):
         self.driver.find_element(By.XPATH, "//button[normalize-space()='Upload Images']").click()
-        file = self.driver.find_element(By.XPATH, "//input[@id='files']")
-        file.send_keys("C:/Users/Muhammad Abbas Khan/Documents/pics/01.jpg")
+        self.driver.find_element(By.XPATH, "//label[@for='files']").click()
+       # autoit.win_active("Open") 
+       # autoit.control_send("Open","Edit1","E:/01.jpg")
+       # autoit.control_send("Open", "Edit1", "{ENTER}")
+       # file.send_keys("C:/Users/Muhammad Abbas Khan/Documents/pics/01.jpg")
+        time.sleep(2)
+        pyautogui.write(r"C:\Users\CDC.CDC-PC\Documents\_{}.jpg".format(assessor_no))
+        pyautogui.press("enter")
         self.driver.find_element(By.XPATH, "//div[@class='col-md-12']//button[@type = 'button']").click()
-        time.sleep(6)
-        self.driver.find_element(By.XPATH, "//button[normalize-space()='Done']").click()
+       # time.sleep(9)
+        self.wait = wait(self.driver, 10, poll_frequency=5) 
+        Done=self.wait.until(EC.element_to_be_clickable((By.XPATH, "//button[normalize-space()='Done']" )))
+        Done.click()
+        #self.driver.find_element(By.XPATH, "//button[normalize-space()='Done']").click()
+        time.sleep(2)
+        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         
