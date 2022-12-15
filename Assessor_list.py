@@ -13,7 +13,7 @@ from Locomotion import Locomotion_score;
 from Locators import locators;
 from BioSecurity import BioSecurity;
 from Heat_Abatement import heat_assessor
-import autoit
+#import autoit
 import pyautogui
 
 
@@ -175,7 +175,8 @@ class assessors_list():
        # autoit.control_send("Open", "Edit1", "{ENTER}")
        # file.send_keys("C:/Users/Muhammad Abbas Khan/Documents/pics/01.jpg")
         time.sleep(2)
-        pyautogui.write(r"C:\Users\CDC.CDC-PC\Documents\_{}.jpg".format(assessor_no))
+        pyautogui.write(r"C:\Users\Muhammad Abbas Khan\Documents\pics\Kbs-size\_{}.jpg".format(assessor_no))
+        #pyautogui.write(r"C:\Users\CDC.CDC-PC\Documents\_{}.jpg".format(assessor_no))
         pyautogui.press("enter")
         self.driver.find_element(By.XPATH, "//div[@class='col-md-12']//button[@type = 'button']").click()
        # time.sleep(9)

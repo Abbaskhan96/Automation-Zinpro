@@ -5,7 +5,7 @@ import time
 import sys
 sys.path.append('C:/Users/Muhammad Abbas Khan/source/repos/Automation-Zinpro/All_assessors_xpath');
 sys.path.append('C:/Users/CDC.CDC-PC/source/repos/Automation-Zinpro/All_assessors_xpath')
-from xpath_heat_abate import Assessors_HeatAbatement_xpath as loc;
+from xpath_heat_abate import Assessors_HeatAbatement_xpath;
 
 class heat_assessor():
     
@@ -34,10 +34,11 @@ class heat_assessor():
 
    
     def closed_HeatAbatement(self):
+        loc = Assessors_HeatAbatement_xpath()
         func = lambda : [i for i in loc.path_yes]
         [self.driver.find_element(By.XPATH, i).click() for i in func()]
         time.sleep(2)
-
+        [i for i in loc.path_yes.keys()]
         #input data into fields....
 
         self.driver.find_element(By.XPATH, loc.accessible_water_pen).send_keys("1500")

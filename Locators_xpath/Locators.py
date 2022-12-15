@@ -90,9 +90,9 @@ class locators():
 
     #---Characteristics----
     consultation_date = "//input[@name='consultation_date']"
-    #select_Date = "//span[@class='cell day selected today']"
+    select_Date = "//span[@class='cell day selected today']"
     #select_Date = "//span[@class='cell day selected today weekend sat']"
-    select_Date = "//span[@class='cell day selected today weekend sun']"
+    #select_Date = "//span[@class='cell day selected today weekend sun']"
     
     herd_size = "//input[@name='herd_size']"
     metric_measurement= "//input[@value='metric']"
