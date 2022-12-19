@@ -25,31 +25,33 @@ class heat_assessor():
        
     
     
-    def selecting_dropdown(self, index):    
-        for i,j in zip(loc.select_fields,index):
-            drop_field = Select(self.driver.find_element(By.XPATH,i))
-            drop_field.select_by_index(j)
-            time.sleep(1)
-        time.sleep(2)
+#    def selecting_dropdown(self, index):    
+#        for i,j in zip(loc.select_fields,index):
+#            drop_field = Select(self.driver.find_element(By.XPATH,i))
+#            drop_field.select_by_index(j)
+#            time.sleep(1)
+#        time.sleep(2)
 
    
     def closed_HeatAbatement(self):
-        loc = Assessors_HeatAbatement_xpath()
-        func = lambda : [i for i in loc.path_yes]
-        [self.driver.find_element(By.XPATH, i).click() for i in func()]
-        time.sleep(2)
-        [i for i in loc.path_yes.keys()]
+        loc = Assessors_HeatAbatement_xpath(self.driver)
+#        func = lambda : [i for i in loc]
+        (self.driver.find_element(By.XPATH, i).click() for i in loc)
+        for i in loc:
+            self.driver.find_element(By.XPATH, i).click()
+#        self.driver.find_element(By.XPATH, loc).click()
+#        [i for i in loc.path_yes.keys()]
         #input data into fields....
 
-        self.driver.find_element(By.XPATH, loc.accessible_water_pen).send_keys("1500")
-        self.driver.find_element(By.XPATH, loc.Fan_FA_temp).send_keys("20")
-        self.driver.find_element(By.XPATH, loc.Fan_FA_space).send_keys("12")
-        self.driver.find_element(By.XPATH, loc.Fan_RA_temp).send_keys("21")
-        self.driver.find_element(By.XPATH, loc.Fan_RA_space).send_keys("5")
-        self.driver.find_element(By.XPATH, loc.Soak_temp).send_keys("21")
-        self.driver.find_element(By.XPATH, loc.Soak_time).send_keys("15")
-        self.driver.find_element(By.XPATH, loc.Soak_freq).send_keys("60")
-        time.sleep(2)
+        
+#        self.driver.find_element(By.XPATH, loc.Fan_FA_temp).send_keys("20")
+#        self.driver.find_element(By.XPATH, loc.Fan_FA_space).send_keys("12")
+#        self.driver.find_element(By.XPATH, loc.Fan_RA_temp).send_keys("21")
+#        self.driver.find_element(By.XPATH, loc.Fan_RA_space).send_keys("5")
+#        self.driver.find_element(By.XPATH, loc.Soak_temp).send_keys("21")
+#        self.driver.find_element(By.XPATH, loc.Soak_time).send_keys("15")
+#        self.driver.find_element(By.XPATH, loc.Soak_freq).send_keys("60")
+#        time.sleep(2)
 
         # selecting Dropdowns fields
         index = [7,3]

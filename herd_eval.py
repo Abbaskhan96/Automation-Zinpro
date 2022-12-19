@@ -26,7 +26,7 @@ class quick_evaluation_form():
     def __init__(self,driver):
         self.driver=driver
         time.sleep(4)
-        self.driver.find_element(By.XPATH,locators.eval_quick_bton_xpath).click()
+        driver.find_element(By.XPATH,locators.eval_quick_bton_xpath).click()
        # self.assessor_details = assessors_list(self.driver);
        # self.assessor_details.click_assessor_checkbox(self.ask)
        # self.assessor_details.click_next(self)
