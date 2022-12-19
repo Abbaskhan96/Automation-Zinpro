@@ -13,8 +13,8 @@ class Locomotion_score():
     def __init__(self,driver, group):
        self.driver = driver
        #//input[@type='number' and @inputmode = 'numeric' and @class = 'score-count score-count--sm']
-      # self.file = o.load_workbook("C:/Users/Muhammad Abbas Khan/Source/Repos/Automation-Zinpro/Excell_files/Locators.xlsx")
-       self.file = o.load_workbook("C:/Users/CDC.CDC-PC/source/repos/Automation-Zinpro/Excell_Files/Locators.xlsx")
+       self.file = o.load_workbook("C:/Users/Muhammad Abbas Khan/Source/Repos/Automation-Zinpro/Excell_files/Locators.xlsx")
+       #self.file = o.load_workbook("C:/Users/CDC.CDC-PC/source/repos/Automation-Zinpro/Excell_Files/Locators.xlsx")
        self.sheet = self.file["Locomotion"]
        
 

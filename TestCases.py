@@ -33,8 +33,8 @@ class TestClass(unittest.TestCase):
     def Launch_driver(self):
         #link = "https://sgp2.zinprofirststep.com/login" 
         #link = "https://sgp1.zinprofirststep.com/login" 
-        #link = "https://hk1.zinprofirststep.com"
-        link = "https://hk2.zinprofirststep.com"
+        link = "https://hk1.zinprofirststep.com"
+        #link = "https://hk2.zinprofirststep.com"
         self.driver.get(link)
         self.driver.maximize_window()
         self.driver.find_element(By.XPATH,"//i[@class='fa fa-times']").click()
@@ -126,7 +126,7 @@ class TestClass(unittest.TestCase):
         print(sum_of_assessors)
        # my_union_list = set().union(*sum_of_assessors)
        #my_union_list = list(my_union_list)
-       # my_union_list.sort()
+       # my_union_list.sort() 
        # print(my_union_list)
         time.sleep(2)
         assessors = assessors_list(self.driver)
